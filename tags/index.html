@@ -107,9 +107,9 @@
       author: 'Quanfita'
     },
     algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
+      applicationID: 'IVYCB29UUC',
+      apiKey: '8edebbf9287bcee54847f5d602dcd0a9',
+      indexName: 'search_insite',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
@@ -230,9 +230,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -321,9 +359,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/uploads/images/avatar.jpg"
-                alt="Quanfita(Qu Mengnan)" />
+                alt="Quanfita" />
             
-              <p class="site-author-name" itemprop="name">Quanfita(Qu Mengnan)</p>
+              <p class="site-author-name" itemprop="name">Quanfita</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -440,7 +478,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Quanfita(Qu Mengnan)</span>
+  <span class="author" itemprop="copyrightHolder">Quanfita</span>
 
   
 </div>
@@ -639,6 +677,19 @@
   
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
