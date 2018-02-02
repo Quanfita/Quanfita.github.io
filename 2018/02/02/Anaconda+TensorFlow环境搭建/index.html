@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="AI, Deep Learning" />
+  <meta name="keywords" content="TensorFlow,环境搭建," />
 
 
 
@@ -81,16 +81,44 @@
 
 
 
-<meta name="description" content="随时、随性、随缘">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Quanfita&#39;s Blogs">
-<meta property="og:url" content="https://Quanfita.github.io/tags/TensorFlow/index.html">
+<meta name="description" content="今天分享一下本人在笔记本上配置TensorFlow环境的过程。 说明电脑配置：  Acer笔记本 CPU Inter Core i5-6200U GPU NVIDIA GeForce 940M(忽略掉我的渣渣GPU) Windows10  所需的环境：  Anaconda3(64bit) CUDA-8.0 CuDNN-5.1 Python-3.6 TensorFlow 或者 TensorFlow-">
+<meta name="keywords" content="TensorFlow,环境搭建">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows10+Anaconda+TensorFlow(CPU &amp; GPU)环境快速搭建">
+<meta property="og:url" content="https://Quanfita.github.io/2018/02/02/Anaconda+TensorFlow环境搭建/index.html">
 <meta property="og:site_name" content="Quanfita&#39;s Blogs">
-<meta property="og:description" content="随时、随性、随缘">
+<meta property="og:description" content="今天分享一下本人在笔记本上配置TensorFlow环境的过程。 说明电脑配置：  Acer笔记本 CPU Inter Core i5-6200U GPU NVIDIA GeForce 940M(忽略掉我的渣渣GPU) Windows10  所需的环境：  Anaconda3(64bit) CUDA-8.0 CuDNN-5.1 Python-3.6 TensorFlow 或者 TensorFlow-">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115192958597?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193411481?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193429214?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193446894?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193527498?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193504823?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193543200?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193553329?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193612982?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193621641?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193629591?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193637985?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193645646?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193653266?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193705468?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193713876?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193723866?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193734175?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193758216?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193809788?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193819785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193832913?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193842777?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193851653?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180115193901780?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2018-02-02T04:12:14.865Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Quanfita&#39;s Blogs">
-<meta name="twitter:description" content="随时、随性、随缘">
+<meta name="twitter:title" content="Windows10+Anaconda+TensorFlow(CPU &amp; GPU)环境快速搭建">
+<meta name="twitter:description" content="今天分享一下本人在笔记本上配置TensorFlow环境的过程。 说明电脑配置：  Acer笔记本 CPU Inter Core i5-6200U GPU NVIDIA GeForce 940M(忽略掉我的渣渣GPU) Windows10  所需的环境：  Anaconda3(64bit) CUDA-8.0 CuDNN-5.1 Python-3.6 TensorFlow 或者 TensorFlow-">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20180115192958597?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
 
@@ -120,13 +148,13 @@
 
 
 
-  <link rel="canonical" href="https://Quanfita.github.io/tags/TensorFlow/"/>
+  <link rel="canonical" href="https://Quanfita.github.io/2018/02/02/Anaconda+TensorFlow环境搭建/"/>
 
 
 
 
 
-  <title>标签: TensorFlow | Quanfita's Blogs</title>
+  <title>Windows10+Anaconda+TensorFlow(CPU & GPU)环境快速搭建 | Quanfita's Blogs</title>
   
 
 
@@ -155,7 +183,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -297,110 +325,289 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>TensorFlow<small>标签</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Quanfita.github.io/2018/02/02/Anaconda+TensorFlow环境搭建/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Quanfita">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Quanfita's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/02/02/Anaconda+TensorFlow环境搭建/" itemprop="url">
-              
-                <span itemprop="name">Windows10+Anaconda+TensorFlow(CPU & GPU)环境快速搭建</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Windows10+Anaconda+TensorFlow(CPU & GPU)环境快速搭建</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-02T12:01:37+08:00"
-              content="2018-02-02" >
-          02-02
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-02T12:01:37+08:00">
+                2018-02-02
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TensorFlow/" itemprop="url" rel="index">
+                    <span itemprop="name">TensorFlow</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TensorFlow/Anaconda/" itemprop="url" rel="index">
+                    <span itemprop="name">Anaconda</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/02/02/Anaconda+TensorFlow环境搭建/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/02/Anaconda+TensorFlow环境搭建/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/02/02/Anaconda+TensorFlow环境搭建/" class="leancloud_visitors" data-flag-title="Windows10+Anaconda+TensorFlow(CPU & GPU)环境快速搭建">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/01/Tensorflow简单神经网络解决Kaggle_Titanic问题/" itemprop="url">
-              
-                <span itemprop="name">Tensorflow简单神经网络解决Kaggle比赛Titanic问题</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-01T11:57:40+08:00"
-              content="2018-02-01" >
-          02-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/01/Tensorflow实现Neural Style图像风格转移/" itemprop="url">
-              
-                <span itemprop="name">Tensorflow实现Neural Style图像风格转移</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-01T11:43:19+08:00"
-              content="2018-02-01" >
-          02-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <p>今天分享一下本人在笔记本上配置TensorFlow环境的过程。</p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p><strong>电脑配置：</strong></p>
+<ul>
+<li>Acer笔记本</li>
+<li>CPU Inter Core i5-6200U</li>
+<li>GPU NVIDIA GeForce 940M(忽略掉我的渣渣GPU)</li>
+<li>Windows10</li>
+</ul>
+<p><strong>所需的环境</strong>：</p>
+<ul>
+<li>Anaconda3(64bit)</li>
+<li>CUDA-8.0</li>
+<li>CuDNN-5.1</li>
+<li>Python-3.6</li>
+<li>TensorFlow 或者 TensorFlow-gpu</li>
+</ul>
+<h2 id="首先安装Anaconda3"><a href="#首先安装Anaconda3" class="headerlink" title="首先安装Anaconda3"></a>首先安装Anaconda3</h2><p>​    我们从官网下载(<a href="https://www.anaconda.com/download/#windows)，也可以使用我上传百度网盘的版本，链接：https://pan.baidu.com/s/1dGEC57z" target="_blank" rel="noopener">https://www.anaconda.com/download/#windows)，也可以使用我上传百度网盘的版本，链接：https://pan.baidu.com/s/1dGEC57z</a> 密码：2om4<br>使用Linux的小伙伴可以同样下载Linux版本的Anaconda，之后我会再做补充的。<br><img src="http://img.blog.csdn.net/20180115192958597?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    下载好后，我们进入安装界面：<br><img src="http://img.blog.csdn.net/20180115193411481?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180115193429214?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180115193446894?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180115193527498?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    这里，我们把两个都选上，第一个是加入环境变量，因为我之前安装过一次所以这里提示不要重复添加，第二个是默认的Python3.6，让后Install。</p>
+<p><img src="http://img.blog.csdn.net/20180115193504823?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    在完成Anaconda的安装后，我们打开Anaconda的命令行(最好用<strong>管理员身份运行</strong>，否则可能会有权限的问题)：</p>
+<p><img src="http://img.blog.csdn.net/20180115193543200?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    我们可以看到一个和Windows命令行很像的一个窗口：</p>
+<p><img src="http://img.blog.csdn.net/20180115193553329?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h2 id="安装CUDA和CuDNN"><a href="#安装CUDA和CuDNN" class="headerlink" title="安装CUDA和CuDNN"></a>安装CUDA和CuDNN</h2><p>​    这里为安装GPU版本的TensorFlow做准备，CPU版本可跳过此部分。</p>
+<p>​    CUDA是NVIDIA推出的运算平台，CuDNN是专门针对Deep Learning框架设计的一套GPU计算加速方案。虽然在之后用conda命令安装tensorflow-gpu时会自动安装cudatoolkit和cudnn，但是我总觉得自己安装一遍比较放心。</p>
+<p>​    我所用的CUDA和CuDNN分享到百度网盘了，链接：<a href="https://pan.baidu.com/s/1dGEC57z" target="_blank" rel="noopener">https://pan.baidu.com/s/1dGEC57z</a> 密码：2om4</p>
+<p>​    先安装CUDA</p>
+<p>​    打开首先先解压：</p>
+<p><img src="http://img.blog.csdn.net/20180115193612982?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180115193621641?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180115193629591?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180115193637985?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180115193645646?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    这里我们选择自定义，因为我们只安装CUDA</p>
+<p><img src="http://img.blog.csdn.net/20180115193653266?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    只选择CUDA其他组件不安装，否则会安装失败</p>
+<p><img src="http://img.blog.csdn.net/20180115193705468?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180115193713876?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    这里可能会提示你安装Visual Studio，忽略掉就好了</p>
+<p><img src="http://img.blog.csdn.net/20180115193723866?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    然后就开始安装了，等待安装结束就好了。</p>
+<p><img src="http://img.blog.csdn.net/20180115193734175?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    解压cudnn的压缩包里面有三个文件夹</p>
+<p><img src="http://img.blog.csdn.net/20180115193758216?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    把这三个文件夹复制到你cuda的安装目录下，我的地址是C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0</p>
+<p><img src="http://img.blog.csdn.net/20180115193809788?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    这样CUDA和CuDNN就安装好了。</p>
+<h2 id="创建TensorFlow环境"><a href="#创建TensorFlow环境" class="headerlink" title="创建TensorFlow环境"></a>创建TensorFlow环境</h2><p>​    我们在刚刚打开的命令行里输入命令(conda的命令大家可以在这篇博客中找到<a href="http://blog.csdn.net/fyuanfena/article/details/52080270)：" target="_blank" rel="noopener">http://blog.csdn.net/fyuanfena/article/details/52080270)：</a></p>
+<blockquote>
+<p>conda create -n tensorflow_gpu python=3.6</p>
+</blockquote>
+<p><img src="http://img.blog.csdn.net/20180115193819785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    中间会让我们确认一下，输入个y回车就好了。安装好后会给我们提示用activate，和deactivate进行环境的切换。</p>
+<p>​    我们先切换到创建好的环境中：</p>
+<blockquote>
+<p>activate tensorflow_gpu</p>
+</blockquote>
+<p>​    现在，基本环境已经配置好了，我们要安装一些重要的Python科学运算库，Anaconda已经为我们准备好的一系列常用的Python苦，例如numpy，pandas，matplotlib等等，所以我们只需要安装一次anaconda库就可以把这些库全部安装好。</p>
+<blockquote>
+<p>conda install anaconda</p>
+</blockquote>
+<p><img src="http://img.blog.csdn.net/20180115193832913?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    可以看到，真的有好多常用库。</p>
+<h2 id="安装TensorFlow"><a href="#安装TensorFlow" class="headerlink" title="安装TensorFlow"></a>安装TensorFlow</h2><p>​    之后就是我们最重要的一步，安装TensorFlow：</p>
+<p>CPU版本</p>
+<blockquote>
+<p>conda install tensorflow<br><img src="http://img.blog.csdn.net/20180115193842777?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</blockquote>
+<p>GPU版本</p>
+<blockquote>
+<p>conda install tensorflow-gpu</p>
+</blockquote>
+<p><img src="http://img.blog.csdn.net/20180115193851653?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    这样我们的TensorFlow环境已经配置好了。</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>​    最后，我们进入jupyter notebook(Anaconda自带的Python IDE，自我感觉挺好用的)输入一段官方文档录入的代码测试一下：</p>
+<p>​    直接输入jupyter notebook，回车</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">hello = tf.constant(<span class="string">'Hello,TensorFlow!'</span>)</span><br><span class="line">sess = tf.Session()</span><br><span class="line">print(sess.run(hello))</span><br></pre></td></tr></table></figure>
+<p><img src="http://img.blog.csdn.net/20180115193901780?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>​    恭喜，你的TensorFlow已经可以用了，接下来快搭建你自己的神经网络吧~！</p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ol>
+<li><a href="http://blog.csdn.net/fyuanfena/article/details/52080270" target="_blank" rel="noopener">Anaconda常用命令大全</a></li>
+<li><a href="https://www.cnblogs.com/platero/p/4118139.html" target="_blank" rel="noopener">NVIDIA CuDNN 安装说明</a></li>
+</ol>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/TensorFlow/" rel="tag"># TensorFlow</a>
+          
+            <a href="/tags/环境搭建/" rel="tag"># 环境搭建</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/01/Tensorflow简单神经网络解决Kaggle_Titanic问题/" rel="next" title="Tensorflow简单神经网络解决Kaggle比赛Titanic问题">
+                <i class="fa fa-chevron-left"></i> Tensorflow简单神经网络解决Kaggle比赛Titanic问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -408,6 +615,14 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMzc4OS8xMDM0Mg=="></div>
+    </div>
+
+  
+
 
         </div>
         
@@ -428,8 +643,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -536,6 +760,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#首先安装Anaconda3"><span class="nav-number">2.</span> <span class="nav-text">首先安装Anaconda3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装CUDA和CuDNN"><span class="nav-number">3.</span> <span class="nav-text">安装CUDA和CuDNN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建TensorFlow环境"><span class="nav-number">4.</span> <span class="nav-text">创建TensorFlow环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装TensorFlow"><span class="nav-number">5.</span> <span class="nav-text">安装TensorFlow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">6.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文章"><span class="nav-number">7.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -696,6 +936,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -725,6 +969,17 @@
 
 
   
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
 
 
 
@@ -742,6 +997,34 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'Quanfita',
+            repo: 'gitment-comments',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '3e1d68d5aa01f8a9d19d966a30b5e60d573ab4de',
+            
+                client_id: '58ffcc411627be9a1cb5'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
+      
+      </script>
     
 
 
@@ -1218,26 +1501,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 

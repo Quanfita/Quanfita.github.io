@@ -16,15 +16,22 @@
     </url>
 
     <url>
-        <loc>https://Quanfita.github.io/tags/TensorFlow/</loc>
+        <loc>https://Quanfita.github.io/tags/Neural-Style/</loc>
         <lastmod>2018-02-01T04:15:41.226Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://Quanfita.github.io/tags/Neural-Style/</loc>
-        <lastmod>2018-02-01T04:15:41.226Z</lastmod>
+        <loc>https://Quanfita.github.io/tags/TensorFlow/</loc>
+        <lastmod>2018-02-02T04:12:14.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://Quanfita.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+        <lastmod>2018-02-02T04:12:14.865Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

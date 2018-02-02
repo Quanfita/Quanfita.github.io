@@ -7,22 +7,22 @@
     </url>
     
     <url>
-        <loc>https://Quanfita.github.io/about/</loc>
-        <lastmod>2018-02-01T05:20:27.109Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>https://Quanfita.github.io/tags/</loc>
-        <lastmod>2018-02-01T03:03:58.762Z</lastmod>
+        <lastmod>2018-02-02T04:11:31.179Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://Quanfita.github.io/categories/</loc>
-        <lastmod>2018-02-01T03:01:40.523Z</lastmod>
+        <lastmod>2018-02-02T04:11:12.327Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://Quanfita.github.io/about/</loc>
+        <lastmod>2018-02-02T04:10:37.389Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
