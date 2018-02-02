@@ -1820,7 +1820,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #291dff;
+  background: #32ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2818,7 +2818,7 @@ pre .javascript .function {
   box-sizing: border-box;
   padding: 40px;
   width: 700px;
-  background: #fff;
+  background: rgba(255,255,255,0.75);
   min-height: 700px;
   box-shadow: initial;
   border-radius: initial;
@@ -3132,12 +3132,6 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
-}
-.post-block {
-  background: rgba(255,255,255,0.75) none repeat scroll !important;
-}
-.comments {
-  background: rgba(255,255,255,0.75) none repeat scroll !important;
 }
 body {
   background-image: url("/images/background.jpg");
