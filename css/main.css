@@ -1820,7 +1820,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #32ffff;
+  background: #32ff4a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2910,7 +2910,7 @@ pre .javascript .function {
 }
 .brand {
   padding: 0;
-  background: none;
+  background: rgba(0,0,0,0.3);
 }
 .brand:hover {
   color: #fff;
