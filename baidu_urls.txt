@@ -1,3 +1,3 @@
-https://Quanfita.github.io/2018/02/02/Anaconda+TensorFlow环境搭建/
-https://Quanfita.github.io/2018/02/01/Tensorflow简单神经网络解决Kaggle_Titanic问题/
-https://Quanfita.github.io/2018/02/01/Tensorflow实现Neural Style图像风格转移/
+https://Quanfita.github.io/2018/02/02/Anaconda_TensorFlow/
+https://Quanfita.github.io/2018/02/01/Tensorflow_Kaggle_Titanic/
+https://Quanfita.github.io/2018/02/01/Tensorflow_Neural_Style/

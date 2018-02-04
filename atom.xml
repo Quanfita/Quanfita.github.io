@@ -18,8 +18,8 @@
   
   <entry>
     <title>Windows10+Anaconda+TensorFlow(CPU and GPU)环境快速搭建</title>
-    <link href="https://Quanfita.github.io/2018/02/02/Anaconda+TensorFlow%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>https://Quanfita.github.io/2018/02/02/Anaconda+TensorFlow环境搭建/</id>
+    <link href="https://Quanfita.github.io/2018/02/02/Anaconda_TensorFlow/"/>
+    <id>https://Quanfita.github.io/2018/02/02/Anaconda_TensorFlow/</id>
     <published>2018-02-02T04:01:37.717Z</published>
     <updated>2018-02-04T11:37:53.330Z</updated>
     
@@ -49,8 +49,8 @@
   
   <entry>
     <title>Tensorflow简单神经网络解决Kaggle比赛Titanic问题</title>
-    <link href="https://Quanfita.github.io/2018/02/01/Tensorflow%E7%AE%80%E5%8D%95%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%A7%A3%E5%86%B3Kaggle_Titanic%E9%97%AE%E9%A2%98/"/>
-    <id>https://Quanfita.github.io/2018/02/01/Tensorflow简单神经网络解决Kaggle_Titanic问题/</id>
+    <link href="https://Quanfita.github.io/2018/02/01/Tensorflow_Kaggle_Titanic/"/>
+    <id>https://Quanfita.github.io/2018/02/01/Tensorflow_Kaggle_Titanic/</id>
     <published>2018-02-01T03:57:40.108Z</published>
     <updated>2018-02-03T01:53:55.112Z</updated>
     
@@ -80,8 +80,8 @@
   
   <entry>
     <title>Tensorflow实现Neural Style图像风格转移</title>
-    <link href="https://Quanfita.github.io/2018/02/01/Tensorflow%E5%AE%9E%E7%8E%B0Neural%20Style%E5%9B%BE%E5%83%8F%E9%A3%8E%E6%A0%BC%E8%BD%AC%E7%A7%BB/"/>
-    <id>https://Quanfita.github.io/2018/02/01/Tensorflow实现Neural Style图像风格转移/</id>
+    <link href="https://Quanfita.github.io/2018/02/01/Tensorflow_Neural_Style/"/>
+    <id>https://Quanfita.github.io/2018/02/01/Tensorflow_Neural_Style/</id>
     <published>2018-02-01T03:43:19.391Z</published>
     <updated>2018-02-03T01:54:14.828Z</updated>
     
