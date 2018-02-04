@@ -5,9 +5,9 @@
   <subtitle>Eloim Essaim Eloim Essaim</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://Quanfita.github.io/"/>
+  <link href="http://quanfita.cn/"/>
   <updated>2018-02-04T11:37:53.330Z</updated>
-  <id>https://Quanfita.github.io/</id>
+  <id>http://quanfita.cn/</id>
   
   <author>
     <name>Quanfita</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Windows10+Anaconda+TensorFlow(CPU and GPU)环境快速搭建</title>
-    <link href="https://Quanfita.github.io/2018/02/02/Anaconda_TensorFlow/"/>
-    <id>https://Quanfita.github.io/2018/02/02/Anaconda_TensorFlow/</id>
+    <link href="http://quanfita.cn/2018/02/02/Anaconda_TensorFlow/"/>
+    <id>http://quanfita.cn/2018/02/02/Anaconda_TensorFlow/</id>
     <published>2018-02-02T04:01:37.717Z</published>
     <updated>2018-02-04T11:37:53.330Z</updated>
     
@@ -36,21 +36,21 @@
     
     </summary>
     
-      <category term="TensorFlow" scheme="https://Quanfita.github.io/categories/TensorFlow/"/>
+      <category term="TensorFlow" scheme="http://quanfita.cn/categories/TensorFlow/"/>
     
-      <category term="Anaconda" scheme="https://Quanfita.github.io/categories/TensorFlow/Anaconda/"/>
+      <category term="Anaconda" scheme="http://quanfita.cn/categories/TensorFlow/Anaconda/"/>
     
     
-      <category term="TensorFlow" scheme="https://Quanfita.github.io/tags/TensorFlow/"/>
+      <category term="TensorFlow" scheme="http://quanfita.cn/tags/TensorFlow/"/>
     
-      <category term="环境搭建" scheme="https://Quanfita.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+      <category term="环境搭建" scheme="http://quanfita.cn/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   
   <entry>
     <title>Tensorflow简单神经网络解决Kaggle比赛Titanic问题</title>
-    <link href="https://Quanfita.github.io/2018/02/01/Tensorflow_Kaggle_Titanic/"/>
-    <id>https://Quanfita.github.io/2018/02/01/Tensorflow_Kaggle_Titanic/</id>
+    <link href="http://quanfita.cn/2018/02/01/Tensorflow_Kaggle_Titanic/"/>
+    <id>http://quanfita.cn/2018/02/01/Tensorflow_Kaggle_Titanic/</id>
     <published>2018-02-01T03:57:40.108Z</published>
     <updated>2018-02-03T01:53:55.112Z</updated>
     
@@ -67,21 +67,21 @@
     
     </summary>
     
-      <category term="DeepLearning" scheme="https://Quanfita.github.io/categories/DeepLearning/"/>
+      <category term="DeepLearning" scheme="http://quanfita.cn/categories/DeepLearning/"/>
     
     
-      <category term="TensorFlow" scheme="https://Quanfita.github.io/tags/TensorFlow/"/>
+      <category term="TensorFlow" scheme="http://quanfita.cn/tags/TensorFlow/"/>
     
-      <category term="Kaggle" scheme="https://Quanfita.github.io/tags/Kaggle/"/>
+      <category term="Kaggle" scheme="http://quanfita.cn/tags/Kaggle/"/>
     
-      <category term="Titanic" scheme="https://Quanfita.github.io/tags/Titanic/"/>
+      <category term="Titanic" scheme="http://quanfita.cn/tags/Titanic/"/>
     
   </entry>
   
   <entry>
     <title>Tensorflow实现Neural Style图像风格转移</title>
-    <link href="https://Quanfita.github.io/2018/02/01/Tensorflow_Neural_Style/"/>
-    <id>https://Quanfita.github.io/2018/02/01/Tensorflow_Neural_Style/</id>
+    <link href="http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/"/>
+    <id>http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/</id>
     <published>2018-02-01T03:43:19.391Z</published>
     <updated>2018-02-03T01:54:14.828Z</updated>
     
@@ -97,12 +97,12 @@
     
     </summary>
     
-      <category term="DeepLearning" scheme="https://Quanfita.github.io/categories/DeepLearning/"/>
+      <category term="DeepLearning" scheme="http://quanfita.cn/categories/DeepLearning/"/>
     
     
-      <category term="TensorFlow" scheme="https://Quanfita.github.io/tags/TensorFlow/"/>
+      <category term="TensorFlow" scheme="http://quanfita.cn/tags/TensorFlow/"/>
     
-      <category term="Neural Style" scheme="https://Quanfita.github.io/tags/Neural-Style/"/>
+      <category term="Neural Style" scheme="http://quanfita.cn/tags/Neural-Style/"/>
     
   </entry>
   
