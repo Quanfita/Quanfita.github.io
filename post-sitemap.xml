@@ -7,16 +7,8 @@
     </url>
 
     <url>
-        <loc>https://Quanfita.github.io/2018/02/02/Anaconda+TensorFlow%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
-        <lastmod>2018-02-02T04:12:14.865Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://Quanfita.github.io/2018/02/01/Tensorflow%E5%AE%9E%E7%8E%B0Neural%20Style%E5%9B%BE%E5%83%8F%E9%A3%8E%E6%A0%BC%E8%BD%AC%E7%A7%BB/</loc>
-        <lastmod>2018-02-01T04:15:41.226Z</lastmod>
+        <lastmod>2018-02-03T01:54:14.828Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,7 +16,15 @@
 
     <url>
         <loc>https://Quanfita.github.io/2018/02/01/Tensorflow%E7%AE%80%E5%8D%95%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%A7%A3%E5%86%B3Kaggle_Titanic%E9%97%AE%E9%A2%98/</loc>
-        <lastmod>2018-02-01T04:13:04.357Z</lastmod>
+        <lastmod>2018-02-03T01:53:55.112Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://Quanfita.github.io/2018/02/02/Anaconda+TensorFlow%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+        <lastmod>2018-02-03T01:53:08.344Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

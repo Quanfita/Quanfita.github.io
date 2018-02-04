@@ -7,22 +7,22 @@
     </url>
 
     <url>
-        <loc>https://Quanfita.github.io/categories/DeepLearning/</loc>
-        <lastmod>2018-02-01T04:15:41.226Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://Quanfita.github.io/categories/TensorFlow/</loc>
-        <lastmod>2018-02-02T04:12:14.865Z</lastmod>
+        <lastmod>2018-02-03T01:53:08.344Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://Quanfita.github.io/categories/TensorFlow/Anaconda/</loc>
-        <lastmod>2018-02-02T04:12:14.865Z</lastmod>
+        <lastmod>2018-02-03T01:53:08.344Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://Quanfita.github.io/categories/DeepLearning/</loc>
+        <lastmod>2018-02-03T01:54:14.828Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
