@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/</loc>
+    
+    <lastmod>2018-02-05T08:25:02.727Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://quanfita.cn/2018/02/02/Anaconda_TensorFlow/</loc>
     
-    <lastmod>2018-02-04T11:37:53.330Z</lastmod>
+    <lastmod>2018-02-05T08:08:44.347Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://quanfita.cn/about/index.html</loc>
     
     <lastmod>2018-02-04T10:35:28.235Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/</loc>
-    
-    <lastmod>2018-02-03T01:54:14.828Z</lastmod>
     
   </url>
   

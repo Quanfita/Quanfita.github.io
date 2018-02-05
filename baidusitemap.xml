@@ -4,34 +4,8 @@
 
     
   <url>
-    <loc>http://quanfita.cn/2018/02/02/Anaconda_TensorFlow/</loc>
-    <lastmod>2018-02-04T11:37:53.330Z</lastmod>
-    <data>
-        <display>
-        <title>Windows10+Anaconda+TensorFlow(CPU and GPU)环境快速搭建</title>
-        <pubTime>2018-02-02T04:01:37.717Z</pubTime>
-        
-        <tag>TensorFlow</tag>
-         
-        <tag>环境搭建</tag>
-         
-         
-           
-             
-              <breadCrumb title="TensorFlow" url="http://quanfita.cn/categories/TensorFlow/"/>
-          
-             
-              <breadCrumb title="Anaconda" url="http://quanfita.cn/categories/TensorFlow/Anaconda/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
     <loc>http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/</loc>
-    <lastmod>2018-02-03T01:54:14.828Z</lastmod>
+    <lastmod>2018-02-05T08:25:02.727Z</lastmod>
     <data>
         <display>
         <title>Tensorflow实现Neural Style图像风格转移</title>
@@ -50,6 +24,29 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://quanfita.cn/2018/02/02/Anaconda_TensorFlow/</loc>
+    <lastmod>2018-02-05T08:08:44.347Z</lastmod>
+    <data>
+        <display>
+        <title>Windows10+Anaconda+TensorFlow(CPU and GPU)环境快速搭建</title>
+        <pubTime>2018-02-02T04:01:37.717Z</pubTime>
+        
+        <tag>TensorFlow</tag>
+         
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="DeepLearning" url="http://quanfita.cn/categories/DeepLearning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://quanfita.cn/2018/02/01/Tensorflow_Kaggle_Titanic/</loc>

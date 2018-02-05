@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -106,7 +106,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20180108213158508?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180108213257762?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180108212431248?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2018-02-03T01:54:14.828Z">
+<meta property="og:updated_time" content="2018-02-05T08:25:02.727Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tensorflow实现Neural Style图像风格转移">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;刚开始接触TensorFlow，实践个小项目，也参考了一下其他博主的文章，希望大家提出宝贵意见。 文章中的代码和图片已上传到GitHub(https://github.com/Quanfita/Neural-Style)。 什么是图像风格迁移？&amp;emsp;&amp;emsp;以下每一张图都是一种不同的艺术风格。从直观上我们很难找出这些不同风格的图片有什么可以用准确的语言来描述的去别">
@@ -161,7 +161,7 @@
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
-  </script>
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
@@ -258,7 +258,7 @@ $(function() {
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/Quanfita"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -541,8 +541,12 @@ $(function() {
 <p>&emsp;&emsp;简言之，作者直接把局部特征看做近似的图片内容，这样就得到了一个把图片内容和图片风格（说白了就是纹理）分开的系统，剩下的就是把一个图片的内容和另一个图片的风格合起来。</p>
 <p>&emsp;&emsp;图像的内容和风格并不能被完全地分解开。当风格与内容来自不同的两个图像时，这个被合成的新图像并不存在在同一时刻完美地符合了两个约束。但是，在图像合成中最小化的损失函数分别包括了内容与风格两者，它们被很好地分开了。所以，我们可以平滑地将重点既放在内容上又放在风格上</p>
 <p><img src="http://img.blog.csdn.net/20180108164858305?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p><strong>方法：</strong><br>&emsp;&emsp;假设某一层得到的响应是$F^{l}\in R^{N<em>{l}\times M</em>{l}}$ ,其中$N<em>{l}$为$l$层filter的个数，$M</em>{l}$为filter的大小。$F_{ij}^{l}$表示的是第$l$层第$i$个filter在位置j的输出。 </p>
-<p>&emsp;&emsp;$\vec{p}$ 代表提供Content的图像，$\vec{x}$ 表示生成的图像，Pl和Fl分别代表它们对于$l$层的响应，因此l层的Content Loss：<br> $$L<em>{content}(\vec{p},\vec{x},l) = \frac{1}{2}\sum</em>{i,j}{(F<em>{ij}^{l}-P</em>{ij}^{l})^{2}}$$<br>&emsp;&emsp;上面我们提到了，某一层的Style可以用$G^{l}\in R^{N<em>{l}\times N</em>{l}}$来表示，其中 ，即不同filter响应的内积。<br>&emsp;&emsp;$\vec{a}$ 代表提供Style的图像，$\vec{x}$ 表示生成的图像，Al和Gl分别代表它们对于$l$层的Style，因此l层的Style Loss：<br>$$E<em>{l} = \frac{1}{4N</em>{l}^{2}M<em>{l}^{2}}\sum</em>{i,j}{(G<em>{ij}^{l}-A</em>{ij}^{l})^{2}}$$<br>&emsp;&emsp;文章中作者使用了多层来表达Style，所以总的Style Loss为：<br> $$L<em>{style}(\vec{a},\vec{x}) = \sum</em>{l=0}^{L}{w<em>{l}E</em>{l}}$$<br>&emsp;&emsp;定义好了两个Loss之后，就利用优化方法来最小化总的Loss：<br> $$L<em>{total}(\vec{p},\vec{a},\vec{x}) = αL</em>{content}(\vec{p},\vec{x}) + βL_{style}(\vec{a},\vec{x})$$<br>&emsp;&emsp;其中的$α$和$β$分别代表了对Content和Style的侧重，文中作者也对$α/β$取值的效果进行了实验。 </p>
+<p><strong>方法：</strong><br>&emsp;&emsp;假设某一层得到的响应是 $F^{l}\in R^{N_{l}\times M_{l}}$  ,其中 $N_{l}$ 为 $l$ 层filter的个数，$M_{l}$为filter的大小。$F_{ij}^{l}$表示的是第$l$层第$i$个filter在位置j的输出。 </p>
+<p>&emsp;&emsp;$\vec{p}$ 代表提供Content的图像，$\vec{x}$ 表示生成的图像，Pl和Fl分别代表它们对于$l$层的响应，因此l层的Content Loss： </p>
+<script type="math/tex; mode=display">L_{content}(\vec{p},\vec{x},l) = \frac{1}{2}\sum_{i,j}{(F_{ij}^{l}-P_{ij}^{l})^{2}}</script><p>&emsp;&emsp;上面我们提到了，某一层的Style可以用$G^{l}\in R^{N_{l}\times N_{l}}$来表示，其中 ，即不同filter响应的内积。<br>&emsp;&emsp;$\vec{a}$ 代表提供Style的图像，$\vec{x}$ 表示生成的图像，Al和Gl分别代表它们对于$l$层的Style，因此l层的Style Loss： </p>
+<script type="math/tex; mode=display">E_{l} = \frac{1}{4N_{l}^{2}M_{l}^{2}}\sum_{i,j}{(G_{ij}^{l}-A_{ij}^{l})^{2}}</script><p>&emsp;&emsp;文章中作者使用了多层来表达Style，所以总的Style Loss为： </p>
+<script type="math/tex; mode=display">L_{style}(\vec{a},\vec{x}) = \sum_{l=0}^{L}{w_{l}E_{l}}</script><p>&emsp;&emsp;定义好了两个Loss之后，就利用优化方法来最小化总的Loss： </p>
+<script type="math/tex; mode=display">L_{total}(\vec{p},\vec{a},\vec{x}) = αL_{content}(\vec{p},\vec{x}) + βL_{style}(\vec{a},\vec{x})</script><p>&emsp;&emsp;其中的$α$和$β$分别代表了对Content和Style的侧重，文中作者也对$α/β$取值的效果进行了实验。 </p>
 <p>&emsp;&emsp;最终迭代出来的$\vec{x}$ 既具有$\vec{p}$ 的Content，同时也具有$\vec{a}$的Style。实验结果也证明了作者文中方法的有效性。</p>
 <p>&emsp;&emsp;$α$和$β$分别是内容和风格在图像重构中的权重因子。$α$和$ β$分别是内容和风格两个损失的权重。$α+β=1$.如果$α$比较大，那么输出后的新图会更多地倾向于内容上的吻合，如果$β$较大，那么输出的新图会更倾向于与风格的吻合。这两个参数是一个trade-off,可以根据自己需求去调整最好的平衡。论文的作者给出了它调整参数的不同结果，如下图，从左到右四列分别是$α/β = 10^{-5}, 10^{-4},10^{-3}, 10^{-2}$.也就是$α$越来越大，的确图像也越来越清晰地呈现出了照片的内容。</p>
 <p><img src="http://img.blog.csdn.net/20180108165121003?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
@@ -574,7 +578,7 @@ $(function() {
 <p><img src="http://img.blog.csdn.net/20180108212407292?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <p><strong>我们在cmd命令行中打入下面代码(我的图片都放在examples/下）：</strong></p>
 <blockquote>
-<p>python neural_style.py –content examples/cat.jpg –styles examples/2-style1.jpg –output y-output.jpg</p>
+<p>python neural_style.py —content examples/cat.jpg —styles examples/2-style1.jpg —output y-output.jpg</p>
 </blockquote>
 <p><img src="http://img.blog.csdn.net/20180108213158508?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <p><strong>然后我们看到计算机已经开始进行风格转移:</strong></p>
@@ -616,7 +620,7 @@ $(function() {
   <p><span>本文标题:</span><a href="/2018/02/01/Tensorflow_Neural_Style/">Tensorflow实现Neural Style图像风格转移</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Quanfita 的个人博客">Quanfita</a></p>
   <p><span>发布时间:</span>2018年02月01日 - 11:02</p>
-  <p><span>最后更新:</span>2018年02月03日 - 09:02</p>
+  <p><span>最后更新:</span>2018年02月05日 - 16:02</p>
   <p><span>原始链接:</span><a href="/2018/02/01/Tensorflow_Neural_Style/" title="Tensorflow实现Neural Style图像风格转移">http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/"  aria-label="复制成功！"></i></span>
   </p>
@@ -794,7 +798,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -917,7 +921,7 @@ var jiathis_config={
 
   
 </div>
-
+<!--
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
@@ -929,14 +933,12 @@ var jiathis_config={
 
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
-
+-->
 <div>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-Total visited <span id="busuanzi_value_site_pv"></span> times
+个人专属 | Total visited <span id="busuanzi_value_site_pv"></span> times
 </div>
-
-
 
 
 
@@ -1658,7 +1660,24 @@ const loadScript = function loadScript(c,b){var a=document.createElement("script
     if (typeof(device) === 'undefined') console.error('Cannot find current-device script.');
   loadScript("/live2d/script.js", function(){loadlive2d("live2dcanvas", "/live2d/assets/z16.model.json", 0.5);});
 })();
+</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 </body>
 </html>
