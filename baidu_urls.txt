@@ -1,4 +1,3 @@
-http://quanfita.cn/2018/02/05/Tensorflow简单神经网络解决Kaggle_Titanic问题/
 http://quanfita.cn/2018/02/02/Anaconda_TensorFlow/
 http://quanfita.cn/2018/02/01/Tensorflow_Kaggle_Titanic/
 http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/
