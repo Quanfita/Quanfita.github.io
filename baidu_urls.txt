@@ -1,3 +1,5 @@
+http://quanfita.cn/2018/02/06/GPSR_introduce/
+http://quanfita.cn/2018/02/06/Artificial_Intelligence_Recommend/
 http://quanfita.cn/2018/02/02/Anaconda_TensorFlow/
 http://quanfita.cn/2018/02/01/Tensorflow_Kaggle_Titanic/
 http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/

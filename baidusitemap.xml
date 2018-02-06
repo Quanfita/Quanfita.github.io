@@ -4,8 +4,50 @@
 
     
   <url>
+    <loc>http://quanfita.cn/2018/02/06/Artificial_Intelligence_Recommend/</loc>
+    <lastmod>2018-02-06T15:53:26.780Z</lastmod>
+    <data>
+        <display>
+        <title>李开复《人工智能》读后感</title>
+        <pubTime>2018-02-06T15:06:56.770Z</pubTime>
+        
+        <tag>人工智能</tag>
+         
+        <tag>推荐</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://quanfita.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/02/06/GPSR_introduce/</loc>
+    <lastmod>2018-02-06T15:52:48.036Z</lastmod>
+    <data>
+        <display>
+        <title>GPSR协议概述</title>
+        <pubTime>2018-02-06T15:49:07.877Z</pubTime>
+        
+        <tag>GPSR</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/</loc>
-    <lastmod>2018-02-05T08:25:02.727Z</lastmod>
+    <lastmod>2018-02-05T08:59:32.636Z</lastmod>
     <data>
         <display>
         <title>Tensorflow实现Neural Style图像风格转移</title>
