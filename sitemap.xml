@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://quanfita.cn/about/index.html</loc>
+    
+    <lastmod>2018-02-07T03:22:50.335Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/02/07/GPSR_NS2/</loc>
+    
+    <lastmod>2018-02-07T03:20:40.405Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://quanfita.cn/2018/02/06/Artificial_Intelligence_Recommend/</loc>
     
     <lastmod>2018-02-06T15:53:26.780Z</lastmod>
@@ -26,13 +40,6 @@
     <loc>http://quanfita.cn/2018/02/02/Anaconda_TensorFlow/</loc>
     
     <lastmod>2018-02-05T08:08:44.347Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://quanfita.cn/about/index.html</loc>
-    
-    <lastmod>2018-02-04T10:35:28.235Z</lastmod>
     
   </url>
   
