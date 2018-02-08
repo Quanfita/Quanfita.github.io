@@ -88,13 +88,13 @@
 
 
 
-<meta name="description" content="前些日子帮老师做了个NS2仿真的小项目，现在项目做完了，写篇博客把流程记录下来。做项目时，NS2和GPSR相关的东西找了好久，总会遇到问题，希望我这篇博客能给广大同学们带来点帮助吧。  目录 [TOC]  NS2环境搭建软硬件环境概述 Windows10(x64) VMware Workstation Pro 12.5 LinuxMint 18.1 ns-allinone-2.35  环境搭建过程">
+<meta name="description" content="前些日子帮老师做了个NS2仿真的小项目，现在项目做完了，写篇博客把流程记录下来。做项目时，NS2和GPSR相关的东西找了好久，总会遇到问题，希望我这篇博客能给广大同学们带来点帮助吧。  NS2环境搭建软硬件环境概述 Windows10(x64) VMware Workstation Pro 12.5 LinuxMint 18.1 ns-allinone-2.35  环境搭建过程首先，在官网下载ns">
 <meta name="keywords" content="GPSR,NS2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GPSR协议的NS2仿真全过程（环境+实验）">
 <meta property="og:url" content="http://quanfita.cn/2018/02/07/GPSR_NS2/index.html">
 <meta property="og:site_name" content="Quanfita&#39;s Blogs">
-<meta property="og:description" content="前些日子帮老师做了个NS2仿真的小项目，现在项目做完了，写篇博客把流程记录下来。做项目时，NS2和GPSR相关的东西找了好久，总会遇到问题，希望我这篇博客能给广大同学们带来点帮助吧。  目录 [TOC]  NS2环境搭建软硬件环境概述 Windows10(x64) VMware Workstation Pro 12.5 LinuxMint 18.1 ns-allinone-2.35  环境搭建过程">
+<meta property="og:description" content="前些日子帮老师做了个NS2仿真的小项目，现在项目做完了，写篇博客把流程记录下来。做项目时，NS2和GPSR相关的东西找了好久，总会遇到问题，希望我这篇博客能给广大同学们带来点帮助吧。  NS2环境搭建软硬件环境概述 Windows10(x64) VMware Workstation Pro 12.5 LinuxMint 18.1 ns-allinone-2.35  环境搭建过程首先，在官网下载ns">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20180124093026094?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180124093059525?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -108,10 +108,10 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20180124093948738?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180124094042085?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180124094135962?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2018-02-07T03:20:40.405Z">
+<meta property="og:updated_time" content="2018-02-08T09:46:30.939Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GPSR协议的NS2仿真全过程（环境+实验）">
-<meta name="twitter:description" content="前些日子帮老师做了个NS2仿真的小项目，现在项目做完了，写篇博客把流程记录下来。做项目时，NS2和GPSR相关的东西找了好久，总会遇到问题，希望我这篇博客能给广大同学们带来点帮助吧。  目录 [TOC]  NS2环境搭建软硬件环境概述 Windows10(x64) VMware Workstation Pro 12.5 LinuxMint 18.1 ns-allinone-2.35  环境搭建过程">
+<meta name="twitter:description" content="前些日子帮老师做了个NS2仿真的小项目，现在项目做完了，写篇博客把流程记录下来。做项目时，NS2和GPSR相关的东西找了好久，总会遇到问题，希望我这篇博客能给广大同学们带来点帮助吧。  NS2环境搭建软硬件环境概述 Windows10(x64) VMware Workstation Pro 12.5 LinuxMint 18.1 ns-allinone-2.35  环境搭建过程首先，在官网下载ns">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20180124093026094?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -548,9 +548,6 @@ $(function() {
       
         <p>前些日子帮老师做了个NS2仿真的小项目，现在项目做完了，写篇博客把流程记录下来。做项目时，NS2和GPSR相关的东西找了好久，总会遇到问题，希望我这篇博客能给广大同学们带来点帮助吧。</p>
 <hr>
-<p><strong>目录</strong></p>
-<p>[TOC]</p>
-<hr>
 <h2 id="NS2环境搭建"><a href="#NS2环境搭建" class="headerlink" title="NS2环境搭建"></a>NS2环境搭建</h2><h3 id="软硬件环境概述"><a href="#软硬件环境概述" class="headerlink" title="软硬件环境概述"></a>软硬件环境概述</h3><ul>
 <li>Windows10(x64)</li>
 <li>VMware Workstation Pro 12.5</li>
@@ -699,7 +696,7 @@ $(function() {
   <p><span>本文标题:</span><a href="/2018/02/07/GPSR_NS2/">GPSR协议的NS2仿真全过程（环境+实验）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Quanfita 的个人博客">Quanfita</a></p>
   <p><span>发布时间:</span>2018年02月07日 - 11:02</p>
-  <p><span>最后更新:</span>2018年02月07日 - 11:02</p>
+  <p><span>最后更新:</span>2018年02月08日 - 17:02</p>
   <p><span>原始链接:</span><a href="/2018/02/07/GPSR_NS2/" title="GPSR协议的NS2仿真全过程（环境+实验）">http://quanfita.cn/2018/02/07/GPSR_NS2/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/02/07/GPSR_NS2/"  aria-label="复制成功！"></i></span>
   </p>
@@ -740,6 +737,11 @@ $(function() {
       </div>
     
 
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="Quanfita 支付宝"/>
+        <p>支付宝</p>
+      </div>
     
 
     
