@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/</loc>
-    <lastmod>2018-02-08T14:16:52.189Z</lastmod>
+    <lastmod>2018-02-11T14:21:11.404Z</lastmod>
     <data>
         <display>
         <title>Tensorflow实现Neural Style图像风格转移</title>
@@ -20,6 +20,21 @@
              
               <breadCrumb title="DeepLearning" url="http://quanfita.cn/categories/DeepLearning/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/02/11/perceptron/</loc>
+    <lastmod>2018-02-11T14:11:12.226Z</lastmod>
+    <data>
+        <display>
+        <title></title>
+        <pubTime>2018-02-11T14:20:02.653Z</pubTime>
+        
+         
+           
         </display>
     </data>
     </url>

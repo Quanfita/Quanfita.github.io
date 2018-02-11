@@ -106,7 +106,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20180108213158508?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180108213257762?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180108212431248?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2018-02-08T14:16:52.189Z">
+<meta property="og:updated_time" content="2018-02-11T14:21:11.404Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tensorflow实现Neural Style图像风格转移">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;刚开始接触TensorFlow，实践个小项目，也参考了一下其他博主的文章，希望大家提出宝贵意见。 文章中的代码和图片已上传到GitHub(https://github.com/Quanfita/Neural-Style)。 什么是图像风格迁移？&amp;emsp;&amp;emsp;以下每一张图都是一种不同的艺术风格。从直观上我们很难找出这些不同风格的图片有什么可以用准确的语言来描述的去别">
@@ -567,8 +567,8 @@ $(function() {
 <script type="math/tex; mode=display">E_{l} = \frac{1}{4N_{l}^{2}M_{l}^{2}}\sum_{i,j}{(G_{ij}^{l}-A_{ij}^{l})^{2}}</script><p>&emsp;&emsp;文章中作者使用了多层来表达Style，所以总的Style Loss为： </p>
 <script type="math/tex; mode=display">L_{style}(\vec{a},\vec{x}) = \sum_{l=0}^{L}{w_{l}E_{l}}</script><p>&emsp;&emsp;定义好了两个Loss之后，就利用优化方法来最小化总的Loss： </p>
 <script type="math/tex; mode=display">L_{total}(\vec{p},\vec{a},\vec{x}) = αL_{content}(\vec{p},\vec{x}) + βL_{style}(\vec{a},\vec{x})</script><p>&emsp;&emsp;其中的<script type="math/tex">α</script>和<script type="math/tex">β</script>分别代表了对Content和Style的侧重，文中作者也对<script type="math/tex">α/β</script>取值的效果进行了实验。 </p>
-<p>&emsp;&emsp;最终迭代出来的<script type="math/tex">\vec{x}</script> 既具有<script type="math/tex">\vec{p}</script> 的Content，同时也具有<script type="math/tex">\vec{a}</script>的Style。实验结果也证明了作者文中方法的有效性。</p>
-<p>&emsp;&emsp;$α$和$β$分别是内容和风格在图像重构中的权重因子。<script type="math/tex">α</script>和<script type="math/tex">β</script>分别是内容和风格两个损失的权重。<script type="math/tex">α+β=1</script>.如果<script type="math/tex">α</script>比较大，那么输出后的新图会更多地倾向于内容上的吻合，如果<script type="math/tex">β</script>较大，那么输出的新图会更倾向于与风格的吻合。这两个参数是一个trade-off,可以根据自己需求去调整最好的平衡。论文的作者给出了它调整参数的不同结果，如下图，从左到右四列分别是<script type="math/tex">α/β = 10^{-5}, 10^{-4},10^{-3}, 10^{-2}</script>.也就是<script type="math/tex">α</script>越来越大，的确图像也越来越清晰地呈现出了照片的内容。</p>
+<p>&emsp;&emsp;最终迭代出来的<script type="math/tex">\vec{x}​</script> 既具有<script type="math/tex">\vec{p}​</script> 的Content，同时也具有<script type="math/tex">\vec{a}​</script>的Style。实验结果也证明了作者文中方法的有效性。</p>
+<p>&emsp;&emsp; <script type="math/tex">α</script>和 <script type="math/tex">β</script>分别是内容和风格在图像重构中的权重因子。<script type="math/tex">α</script>和<script type="math/tex">β</script>分别是内容和风格两个损失的权重。<script type="math/tex">α+β=1</script>.如果<script type="math/tex">α</script>比较大，那么输出后的新图会更多地倾向于内容上的吻合，如果<script type="math/tex">β</script>较大，那么输出的新图会更倾向于与风格的吻合。这两个参数是一个trade-off,可以根据自己需求去调整最好的平衡。论文的作者给出了它调整参数的不同结果，如下图，从左到右四列分别是<script type="math/tex">α/β = 10^{-5}, 10^{-4},10^{-3}, 10^{-2}</script>.也就是<script type="math/tex">α</script>越来越大，的确图像也越来越清晰地呈现出了照片的内容。</p>
 <p><img src="http://img.blog.csdn.net/20180108165121003?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p><strong>环境介绍</strong></p>
 <ul>
@@ -640,7 +640,7 @@ $(function() {
   <p><span>本文标题:</span><a href="/2018/02/01/Tensorflow_Neural_Style/">Tensorflow实现Neural Style图像风格转移</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Quanfita 的个人博客">Quanfita</a></p>
   <p><span>发布时间:</span>2018年02月01日 - 11:02</p>
-  <p><span>最后更新:</span>2018年02月08日 - 22:02</p>
+  <p><span>最后更新:</span>2018年02月11日 - 22:02</p>
   <p><span>原始链接:</span><a href="/2018/02/01/Tensorflow_Neural_Style/" title="Tensorflow实现Neural Style图像风格转移">http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/"  aria-label="复制成功！"></i></span>
   </p>
@@ -836,7 +836,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
