@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="AI, Deep Learning" />
+  <meta name="keywords" content="Machine Learning,Perceptron," />
 
 
 
@@ -89,17 +89,18 @@
 
 
 <meta name="description" content="&amp;emsp;&amp;emsp;从头开始学习李航老师的《统计学习方法》，这本书写的很好，非常适合机器学习入门。 感知机模型&amp;emsp;&amp;emsp;什么是感知机？感知机是二类分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取+1和-1二值。感知机学习旨在求出可以将数据进行划分的分离超平面，所以感知机能够解决的问题首先要求特征空间是线性可分的，再者是二类分类，即将样本分为{+1, -1}两类。分">
+<meta name="keywords" content="Machine Learning,Perceptron">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Quanfita&#39;s Blogs">
+<meta property="og:title" content="机器学习入门之《统计学习方法》笔记整理——感知机">
 <meta property="og:url" content="http://quanfita.cn/2018/02/11/perceptron/index.html">
 <meta property="og:site_name" content="Quanfita&#39;s Blogs">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;从头开始学习李航老师的《统计学习方法》，这本书写的很好，非常适合机器学习入门。 感知机模型&amp;emsp;&amp;emsp;什么是感知机？感知机是二类分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取+1和-1二值。感知机学习旨在求出可以将数据进行划分的分离超平面，所以感知机能够解决的问题首先要求特征空间是线性可分的，再者是二类分类，即将样本分为{+1, -1}两类。分">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/2018021122084386?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:image" content="http://img.blog.csdn.net/20180211220931175?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-02-11T14:11:12.226Z">
+<meta property="og:updated_time" content="2018-02-11T14:29:48.119Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Quanfita&#39;s Blogs">
+<meta name="twitter:title" content="机器学习入门之《统计学习方法》笔记整理——感知机">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;从头开始学习李航老师的《统计学习方法》，这本书写的很好，非常适合机器学习入门。 感知机模型&amp;emsp;&amp;emsp;什么是感知机？感知机是二类分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取+1和-1二值。感知机学习旨在求出可以将数据进行划分的分离超平面，所以感知机能够解决的问题首先要求特征空间是线性可分的，再者是二类分类，即将样本分为{+1, -1}两类。分">
 <meta name="twitter:image" content="http://img.blog.csdn.net/2018021122084386?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 
@@ -137,7 +138,7 @@
 
 
 
-  <title> | Quanfita's Blogs</title>
+  <title>机器学习入门之《统计学习方法》笔记整理——感知机 | Quanfita's Blogs</title>
   
 
 
@@ -442,7 +443,7 @@ $(function() {
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">机器学习入门之《统计学习方法》笔记整理——感知机</h1>
         
 
         <div class="post-meta">
@@ -465,6 +466,28 @@ $(function() {
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/note/" itemprop="url" rel="index">
+                    <span itemprop="name">note</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -482,7 +505,7 @@ $(function() {
 
           
           
-             <span id="/2018/02/11/perceptron/" class="leancloud_visitors" data-flag-title="">
+             <span id="/2018/02/11/perceptron/" class="leancloud_visitors" data-flag-title="机器学习入门之《统计学习方法》笔记整理——感知机">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -595,6 +618,35 @@ $(function() {
     <div>
       
         
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2018/02/11/perceptron/">机器学习入门之《统计学习方法》笔记整理——感知机</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Quanfita 的个人博客">Quanfita</a></p>
+  <p><span>发布时间:</span>2018年02月11日 - 22:02</p>
+  <p><span>最后更新:</span>2018年02月11日 - 22:02</p>
+  <p><span>原始链接:</span><a href="/2018/02/11/perceptron/" title="机器学习入门之《统计学习方法》笔记整理——感知机">http://quanfita.cn/2018/02/11/perceptron/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/02/11/perceptron/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
       
     </div>
 
@@ -634,6 +686,14 @@ $(function() {
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Machine-Learning/" rel="tag"><i class="fa fa-tag"></i> Machine Learning</a>
+          
+            <a href="/tags/Perceptron/" rel="tag"><i class="fa fa-tag"></i> Perceptron</a>
+          
+        </div>
       
 
       
@@ -785,7 +845,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1607,6 +1667,26 @@ var jiathis_config={
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 

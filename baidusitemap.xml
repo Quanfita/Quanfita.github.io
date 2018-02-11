@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>http://quanfita.cn/2018/02/11/perceptron/</loc>
+    <lastmod>2018-02-11T14:29:48.119Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门之《统计学习方法》笔记整理——感知机</title>
+        <pubTime>2018-02-11T14:20:02.653Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>Perceptron</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://quanfita.cn/2018/02/01/Tensorflow_Neural_Style/</loc>
-    <lastmod>2018-02-11T14:21:11.404Z</lastmod>
+    <lastmod>2018-02-11T14:26:31.475Z</lastmod>
     <data>
         <display>
         <title>Tensorflow实现Neural Style图像风格转移</title>
@@ -15,26 +37,13 @@
          
         <tag>Neural Style</tag>
          
+        <tag>Neural Networks</tag>
+         
          
            
              
               <breadCrumb title="DeepLearning" url="http://quanfita.cn/categories/DeepLearning/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://quanfita.cn/2018/02/11/perceptron/</loc>
-    <lastmod>2018-02-11T14:11:12.226Z</lastmod>
-    <data>
-        <display>
-        <title></title>
-        <pubTime>2018-02-11T14:20:02.653Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
