@@ -1,3 +1,4 @@
+http://quanfita.cn/2018/02/12/k_NN/
 http://quanfita.cn/2018/02/11/perceptron/
 http://quanfita.cn/2018/02/07/GPSR_NS2/
 http://quanfita.cn/2018/02/06/GPSR_introduce/
