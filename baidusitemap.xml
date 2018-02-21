@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>http://quanfita.cn/2018/02/21/NewBlog/</loc>
+    <lastmod>2018-02-21T13:12:24.088Z</lastmod>
+    <data>
+        <display>
+        <title>终于完成博客的搭建工作了，欢迎大家访问</title>
+        <pubTime>2018-02-21T13:20:54.648Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>GitHub Pages</tag>
+         
+        <tag>coding pages</tag>
+         
+        <tag>NexT</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客搭建" url="http://quanfita.cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://quanfita.cn/2018/02/21/naive_Bayes/</loc>
     <lastmod>2018-02-21T12:00:27.930Z</lastmod>
     <data>

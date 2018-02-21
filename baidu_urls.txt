@@ -1,3 +1,4 @@
+http://quanfita.cn/2018/02/21/NewBlog/
 http://quanfita.cn/2018/02/21/naive_Bayes/
 http://quanfita.cn/2018/02/12/k_NN/
 http://quanfita.cn/2018/02/11/perceptron/
