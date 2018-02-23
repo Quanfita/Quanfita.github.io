@@ -88,19 +88,19 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X 和">
+<meta name="description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X">
 <meta name="keywords" content="Machine Learning,Naive Bayes">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">
 <meta property="og:url" content="http://quanfita.cn/2018/02/21/naive_Bayes/index.html">
 <meta property="og:site_name" content="Quanfita&#39;s Blogs">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X 和">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20180221194837856?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-02-21T12:00:27.930Z">
+<meta property="og:updated_time" content="2018-02-23T04:41:54.071Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X 和">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20180221194837856?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 
 
@@ -535,7 +535,9 @@ $(function() {
       
 
       
-        <p>&emsp;&emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。</p>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<p>&emsp;&emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。</p>
 <h2 id="朴素贝叶斯法"><a href="#朴素贝叶斯法" class="headerlink" title="朴素贝叶斯法"></a>朴素贝叶斯法</h2><p>&emsp;&emsp;设输入空间<script type="math/tex">X\subseteq \mathbb{R}^n</script> 为<script type="math/tex">n</script> 维向量的集合，输出空间为类标记集合<script type="math/tex">Y=\left \{ c_1,c_2,...,c_K \right \}</script> ，输入特征向量<script type="math/tex">x \in X</script> ，输出类标记为<script type="math/tex">y\in Y</script> ，<script type="math/tex">P(X,Y)</script> 是<script type="math/tex">X</script> 和<script type="math/tex">Y</script> 的联合概率分布，数据集</p>
 <script type="math/tex; mode=display">T = \left \{ (x_1,y_1),(x_2,y_2),...,(x_n,y_n) \right \}</script><p>由<script type="math/tex">P(X,Y)</script> 独立同分布产生。</p>
 <p>&emsp;&emsp;朴素贝叶斯法就是通过训练集来学习联合概率分布<script type="math/tex">P(X,Y)</script> .具体就是从先验概率分布和条件概率分布入手，俩概率相乘即可得联合概率。</p>
@@ -600,7 +602,7 @@ $(function() {
   <p><span>本文标题:</span><a href="/2018/02/21/naive_Bayes/">机器学习入门之《统计学习方法》笔记——朴素贝叶斯法</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Quanfita 的个人博客">Quanfita</a></p>
   <p><span>发布时间:</span>2018年02月21日 - 19:02</p>
-  <p><span>最后更新:</span>2018年02月21日 - 20:02</p>
+  <p><span>最后更新:</span>2018年02月23日 - 12:02</p>
   <p><span>原始链接:</span><a href="/2018/02/21/naive_Bayes/" title="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">http://quanfita.cn/2018/02/21/naive_Bayes/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/02/21/naive_Bayes/"  aria-label="复制成功！"></i></span>
   </p>
