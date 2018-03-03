@@ -4,6 +4,72 @@
 
     
   <url>
+    <loc>http://quanfita.cn/2018/03/03/maximum_entropy/</loc>
+    <lastmod>2018-03-03T15:25:04.274Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门之《统计学习方法》笔记整理——最大熵模型</title>
+        <pubTime>2018-03-03T15:12:43.012Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>最大熵模型</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/03/03/logistic_regression/</loc>
+    <lastmod>2018-03-03T15:23:21.086Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门之《统计学习方法》笔记整理——逻辑斯谛回归</title>
+        <pubTime>2018-03-03T15:12:42.961Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>logistic</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/03/03/decision_tree/</loc>
+    <lastmod>2018-03-03T15:21:55.049Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门之《统计学习方法》笔记整理——决策树</title>
+        <pubTime>2018-03-03T15:12:43.049Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>决策树</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://quanfita.cn/2018/02/21/naive_Bayes/</loc>
     <lastmod>2018-02-23T04:46:18.095Z</lastmod>
     <data>

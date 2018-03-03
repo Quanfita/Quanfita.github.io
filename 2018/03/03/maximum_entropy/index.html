@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Machine Learning,Naive Bayes," />
+  <meta name="keywords" content="Machine Learning,最大熵模型," />
 
 
 
@@ -88,20 +88,18 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X">
-<meta name="keywords" content="Machine Learning,Naive Bayes">
+<meta name="description" content="最大熵原理&amp;emsp;&amp;emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。 首先回顾几个概念： 熵 &amp;emsp;&amp;emsp;假设离散随机变量X 的概率分布是P(X) ，则其熵为 H(P)=-\sum \limit">
+<meta name="keywords" content="Machine Learning,最大熵模型">
 <meta property="og:type" content="article">
-<meta property="og:title" content="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">
-<meta property="og:url" content="http://quanfita.cn/2018/02/21/naive_Bayes/index.html">
+<meta property="og:title" content="机器学习入门之《统计学习方法》笔记整理——最大熵模型">
+<meta property="og:url" content="http://quanfita.cn/2018/03/03/maximum_entropy/index.html">
 <meta property="og:site_name" content="Quanfita&#39;s Blogs">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X">
+<meta property="og:description" content="最大熵原理&amp;emsp;&amp;emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。 首先回顾几个概念： 熵 &amp;emsp;&amp;emsp;假设离散随机变量X 的概率分布是P(X) ，则其熵为 H(P)=-\sum \limit">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://img.blog.csdn.net/20180221194837856?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-02-23T04:46:18.095Z">
+<meta property="og:updated_time" content="2018-03-03T15:25:04.274Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X">
-<meta name="twitter:image" content="http://img.blog.csdn.net/20180221194837856?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta name="twitter:title" content="机器学习入门之《统计学习方法》笔记整理——最大熵模型">
+<meta name="twitter:description" content="最大熵原理&amp;emsp;&amp;emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。 首先回顾几个概念： 熵 &amp;emsp;&amp;emsp;假设离散随机变量X 的概率分布是P(X) ，则其熵为 H(P)=-\sum \limit">
 
 
 
@@ -131,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://quanfita.cn/2018/02/21/naive_Bayes/"/>
+  <link rel="canonical" href="http://quanfita.cn/2018/03/03/maximum_entropy/"/>
 
 
 
 
 
-  <title>机器学习入门之《统计学习方法》笔记——朴素贝叶斯法 | Quanfita's Blogs</title>
+  <title>机器学习入门之《统计学习方法》笔记整理——最大熵模型 | Quanfita's Blogs</title>
   
 
 
@@ -425,7 +423,7 @@ $(function() {
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://quanfita.cn/2018/02/21/naive_Bayes/">
+    <link itemprop="mainEntityOfPage" href="http://quanfita.cn/2018/03/03/maximum_entropy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Quanfita">
@@ -442,7 +440,7 @@ $(function() {
 
         
         
-          <h1 class="post-title" itemprop="name headline">机器学习入门之《统计学习方法》笔记——朴素贝叶斯法</h1>
+          <h1 class="post-title" itemprop="name headline">机器学习入门之《统计学习方法》笔记整理——最大熵模型</h1>
         
 
         <div class="post-meta">
@@ -454,8 +452,8 @@ $(function() {
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-21T19:57:46+08:00">
-                2018-02-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-03T23:12:43+08:00">
+                2018-03-03
               </time>
             
 
@@ -495,8 +493,8 @@ $(function() {
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/02/21/naive_Bayes/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/21/naive_Bayes/" itemprop="commentsCount"></span>
+                <a href="/2018/03/03/maximum_entropy/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/03/03/maximum_entropy/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -504,7 +502,7 @@ $(function() {
 
           
           
-             <span id="/2018/02/21/naive_Bayes/" class="leancloud_visitors" data-flag-title="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">
+             <span id="/2018/03/03/maximum_entropy/" class="leancloud_visitors" data-flag-title="机器学习入门之《统计学习方法》笔记整理——最大熵模型">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -535,43 +533,75 @@ $(function() {
       
 
       
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-<p>&emsp;&emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。</p>
-<h2 id="朴素贝叶斯法"><a href="#朴素贝叶斯法" class="headerlink" title="朴素贝叶斯法"></a>朴素贝叶斯法</h2><p>&emsp;&emsp;设输入空间<script type="math/tex">X\subseteq \mathbb{R}^n</script> 为<script type="math/tex">n</script> 维向量的集合，输出空间为类标记集合<script type="math/tex">Y=\left \{ c_1,c_2,...,c_K \right \}</script> ，输入特征向量<script type="math/tex">x \in X</script> ，输出类标记为<script type="math/tex">y\in Y</script> ，<script type="math/tex">P(X,Y)</script> 是<script type="math/tex">X</script> 和<script type="math/tex">Y</script> 的联合概率分布，数据集</p>
-<script type="math/tex; mode=display">T = \left \{ (x_1,y_1),(x_2,y_2),...,(x_n,y_n) \right \}</script><p>由<script type="math/tex">P(X,Y)</script> 独立同分布产生。</p>
-<p>&emsp;&emsp;朴素贝叶斯法就是通过训练集来学习联合概率分布<script type="math/tex">P(X,Y)</script> .具体就是从先验概率分布和条件概率分布入手，俩概率相乘即可得联合概率。</p>
-<p>&emsp;&emsp;称之为朴素是因为将条件概率的估计简化了，对条件概率分布作了条件独立性假设，这也是朴素贝叶斯法的基石，假设如下</p>
-<script type="math/tex; mode=display">P(X=x|Y=c_k)=P(X^{(1)}=x^{(1)},...,X^{(n)}=x^{(n)}|Y=c_k), k=1,2,...,K</script><p>&emsp;&emsp;这个公式在之前的假设条件下等价于</p>
-<script type="math/tex; mode=display">\prod \limits_{j=i}^n P(X^{(j)}=x^{(j)}|Y=c_k)</script><p>&emsp;&emsp;对于给定的输入向量<script type="math/tex">x</script> ,通过学习到的模型计算后验概率分布<script type="math/tex">P(Y=C_k|X=x)</script> ，后验分布中最大的类作为<script type="math/tex">x</script> 的输出结果，根据贝叶斯定理可知后验概率为</p>
-<script type="math/tex; mode=display">P(Y=c_k|X=x)=\frac{P(X=x|Y=c_k)P(Y=c_k)}{\sum_kP(X=x|Y=c_k)P(Y=c_k)}</script><p>&emsp;&emsp;其中<script type="math/tex">\sum_kP(X=x|Y=c_k)P(Y=c_k)\Leftrightarrow P(X=x)</script> </p>
-<p>&emsp;&emsp;所有<script type="math/tex">c_k</script> 的<script type="math/tex">P(X=x)</script> 都是相同的，这样我们可以把输出结果化简成</p>
-<script type="math/tex; mode=display">y = arg \max \limits_{c_k} P(Y=c_k) \prod_jP(X^{(j)}=x^{(j)}|Y=c_k)</script><p>&emsp;&emsp;这样，就了解了朴素贝叶斯法的基本原理了，下面要介绍的是参数估计。</p>
-<h2 id="参数估计"><a href="#参数估计" class="headerlink" title="参数估计"></a>参数估计</h2><h3 id="极大似然估计"><a href="#极大似然估计" class="headerlink" title="极大似然估计"></a>极大似然估计</h3><p>&emsp;&emsp;我们已经知道对于给定的输入向量<script type="math/tex">x</script> ，其输出结果可以表示为</p>
-<script type="math/tex; mode=display">y = arg \max \limits_{c_k} P(Y=c_k) \prod_jP(X^{(j)}=x^{(j)}|Y=c_k)</script><p>&emsp;&emsp;可以使用极大似然估计法来估计相应的概率。先验概率<script type="math/tex">P(Y=c_k)</script> 的极大似然估计是</p>
-<script type="math/tex; mode=display">P(Y=c_k)=\frac{\sum \limits_{i=1}^NI(y_i=c_k)} {N}, k=1,2,...,K</script><p>&emsp;&emsp; 设第<script type="math/tex">j</script> 个特征<script type="math/tex">x^{(j)}</script> 可能的取值的集合为<script type="math/tex">\left \{ a_{j1} ,a_{j2} ,...,a_{js_j} \right \}</script> ，条件概率<script type="math/tex">P(X^{(j)}=a_{jl}|Y=c_k)</script> 的极大似然估计是</p>
-<script type="math/tex; mode=display">P(X^{(j)}=a_{jl},Y=c_k)=\frac{\sum \limits_{i=1}^NI(x_i^{(j)}=a_{jl},y_i=c_k)} {\sum \limits_{i=1}^NI(y_i=c_k)}</script><script type="math/tex; mode=display">j=1,2,...,n; l=1,2,...,S_j;k=1,2,...,K</script><h3 id="学习与分类算法"><a href="#学习与分类算法" class="headerlink" title="学习与分类算法"></a>学习与分类算法</h3><p>&emsp;&emsp;下面给出朴素贝叶斯法的学习与分类算法。</p>
-<h4 id="算法-朴素贝叶斯算法"><a href="#算法-朴素贝叶斯算法" class="headerlink" title="算法  (朴素贝叶斯算法)"></a>算法  (朴素贝叶斯算法)</h4><p>输入: 训练数据 <script type="math/tex">T = \left \{ (x_1,y_1),(x_2,y_2),...,(x_n,y_n) \right \}</script> , 其中<script type="math/tex">x_i = (x_i^{(1)},x_i^{(2)},...,x_i^{(n)} )^T</script> ，<script type="math/tex">x_i^{(j)}\in \left \{ a_{j1} ,a_{j2} ,...,a_{js_j} \right \}</script> ，<script type="math/tex">j=1,2,...,n</script> ，<script type="math/tex">l=1,2,...,S_j</script> ，<script type="math/tex">y_i \in  \left \{ c_1,c_2,...,c_K \right \}</script> ；实例<script type="math/tex">x</script> ；</p>
-<p>输出: 实例<script type="math/tex">x</script> 的分类.</p>
-<p>(1) 计算先验概率及条件概率</p>
-<script type="math/tex; mode=display">P(Y=c_k)=\frac{\sum \limits_{i=1}^NI(y_i=c_k)} {N}, k=1,2,...,K</script><script type="math/tex; mode=display">P(X^{(j)}=a_{jl},Y=c_k)=\frac{\sum \limits_{i=1}^NI(x_i^{(j)}=a_{jl},y_i=c_k)} {\sum \limits_{i=1}^NI(y_i=c_k)}</script><script type="math/tex; mode=display">j=1,2,...,n; l=1,2,...,S_j;k=1,2,...,K</script><p>(2) 对于给定的实例<script type="math/tex">x = (x^{(1)},x^{(2)},...,x^{(n)} )^T</script> ，计算</p>
-<script type="math/tex; mode=display">P(Y=c_k) \prod_jP(X^{(j)}=x^{(j)}|Y=c_k),k=1,2,...,K</script><p>(3) 确定实例<script type="math/tex">x</script> 的类</p>
-<script type="math/tex; mode=display">y = arg \max \limits_{c_k} P(Y=c_k) \prod_jP(X^{(j)}=x^{(j)}|Y=c_k)</script><p><strong>例子</strong>：试由下表的训练数据学习一个朴素贝叶斯分类器并确定<script type="math/tex">x=(2,S)^T</script> 的类标记，表中<script type="math/tex">X^{(1)},X^{(2)}</script> 为特征，<script type="math/tex">Y</script> 为类标记。</p>
-<p><img src="http://img.blog.csdn.net/20180221194837856?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
-<p>python代码如下:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment">#构造NB分类器</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Train</span><span class="params">(X_train, Y_train, feature)</span>:</span></span><br><span class="line">    <span class="keyword">global</span> class_num,label</span><br><span class="line">    class_num = <span class="number">2</span>           <span class="comment">#分类数目</span></span><br><span class="line">    label = [<span class="number">1</span>, <span class="number">-1</span>]         <span class="comment">#分类标签</span></span><br><span class="line">    feature_len = <span class="number">3</span>         <span class="comment">#特征长度</span></span><br><span class="line">    <span class="comment">#构造3×2的列表</span></span><br><span class="line">    feature = [[<span class="number">1</span>, <span class="string">'S'</span>],    </span><br><span class="line">               [<span class="number">2</span>, <span class="string">'M'</span>],</span><br><span class="line">               [<span class="number">3</span>, <span class="string">'L'</span>]]</span><br><span class="line"></span><br><span class="line">    prior_prob = np.zeros(class_num)                         <span class="comment"># 初始化先验概率</span></span><br><span class="line">    con_prob = np.zeros((class_num,feature_len,<span class="number">2</span>))   <span class="comment"># 初始化条件概率</span></span><br><span class="line">    </span><br><span class="line">    positive_count = <span class="number">0</span>     <span class="comment">#统计正类</span></span><br><span class="line">    negative_count = <span class="number">0</span>     <span class="comment">#统计负类</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(Y_train)):</span><br><span class="line">        <span class="keyword">if</span> Y_train[i] == <span class="number">1</span>:</span><br><span class="line">            positive_count += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            negative_count += <span class="number">1</span></span><br><span class="line">    prior_prob[<span class="number">0</span>] = positive_count / len(Y_train)    <span class="comment">#求得正类的先验概率</span></span><br><span class="line">    prior_prob[<span class="number">1</span>] = negative_count / len(Y_train)    <span class="comment">#求得负类的先验概率</span></span><br><span class="line">    </span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    con_prob是一个2*3*2的三维列表，第一维是类别分类，第二维和第三维是一个3*2的特征分类</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment">#分为两个类别</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(class_num):</span><br><span class="line">        <span class="comment">#对特征按行遍历</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(feature_len):</span><br><span class="line">            <span class="comment">#遍历数据集，并依次做判断</span></span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> range(len(Y_train)): </span><br><span class="line">                <span class="keyword">if</span> Y_train[k] == label[i]: <span class="comment">#相同类别</span></span><br><span class="line">                    <span class="keyword">if</span> X_train[k][<span class="number">0</span>] == feature[j][<span class="number">0</span>]:</span><br><span class="line">                        con_prob[i][j][<span class="number">0</span>] += <span class="number">1</span></span><br><span class="line">                    <span class="keyword">if</span> X_train[k][<span class="number">1</span>] == feature[j][<span class="number">1</span>]:</span><br><span class="line">                        con_prob[i][j][<span class="number">1</span>] += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    class_label_num = [positive_count, negative_count]  <span class="comment">#存放各类型的数目</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(class_num):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(feature_len):</span><br><span class="line">            con_prob[i][j][<span class="number">0</span>] = con_prob[i][j][<span class="number">0</span>] / class_label_num[i]  <span class="comment">#求得i类j行第一个特征的条件概率 </span></span><br><span class="line">            con_prob[i][j][<span class="number">1</span>] = con_prob[i][j][<span class="number">1</span>] / class_label_num[i]  <span class="comment">#求得i类j行第二个特征的条件概率</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> prior_prob,con_prob</span><br><span class="line"></span><br><span class="line"><span class="comment">#给定数据进行分类</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Predict</span><span class="params">(testset, prior_prob, con_prob, feature)</span>:</span></span><br><span class="line">    result = np.zeros(len(label))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(class_num):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(feature)):</span><br><span class="line">            <span class="keyword">if</span> feature[j][<span class="number">0</span>] == testset[<span class="number">0</span>]:</span><br><span class="line">                conA = con_prob[i][j][<span class="number">0</span>]</span><br><span class="line">            <span class="keyword">if</span> feature[j][<span class="number">1</span>] == testset[<span class="number">1</span>]:</span><br><span class="line">                conB = con_prob[i][j][<span class="number">1</span>]</span><br><span class="line">        result[i] = conA * conB * prior_prob[i]</span><br><span class="line"></span><br><span class="line">    result = np.vstack([result,label])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    X_train = [[<span class="number">1</span>, <span class="string">'S'</span>], [<span class="number">1</span>, <span class="string">'M'</span>], [<span class="number">1</span>, <span class="string">'M'</span>], [<span class="number">1</span>, <span class="string">'S'</span>],  [<span class="number">1</span>, <span class="string">'S'</span>],</span><br><span class="line">               [<span class="number">2</span>, <span class="string">'S'</span>], [<span class="number">2</span>, <span class="string">'M'</span>], [<span class="number">2</span>, <span class="string">'M'</span>], [<span class="number">2</span>, <span class="string">'L'</span>],  [<span class="number">2</span>, <span class="string">'L'</span>],</span><br><span class="line">               [<span class="number">3</span>, <span class="string">'L'</span>], [<span class="number">3</span>, <span class="string">'M'</span>], [<span class="number">3</span>, <span class="string">'M'</span>], [<span class="number">3</span>, <span class="string">'L'</span>],  [<span class="number">3</span>, <span class="string">'L'</span>]]</span><br><span class="line">    Y_train = [<span class="number">-1</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">-1</span>]   </span><br><span class="line"></span><br><span class="line">    <span class="comment">#构造3×2的列表</span></span><br><span class="line">    feature = [[<span class="number">1</span>, <span class="string">'S'</span>],    </span><br><span class="line">               [<span class="number">2</span>, <span class="string">'M'</span>],</span><br><span class="line">               [<span class="number">3</span>, <span class="string">'L'</span>]]</span><br><span class="line"></span><br><span class="line">    testset = [<span class="number">2</span>, <span class="string">'S'</span>]</span><br><span class="line">    </span><br><span class="line">    prior_prob, con_prob= Train(X_train, Y_train, feature)</span><br><span class="line">    </span><br><span class="line">    result = Predict(testset, prior_prob, con_prob, feature)</span><br><span class="line">    print(<span class="string">'The result:'</span>,result)</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;得到结果:</p>
-<blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; The result: [[ 0.02222222  0.06666667]</span><br><span class="line">&gt;  [ 1.         -1.        ]]</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="贝叶斯估计"><a href="#贝叶斯估计" class="headerlink" title="贝叶斯估计"></a>贝叶斯估计</h3><p>&emsp;&emsp;极大似然估计的一个可能是会出现所要估计的概率值为0的情况，这时会影响到后验概率的计算结果，解决这一问题的方法是采用贝叶斯估计，具体的只需要在极大似然估计的基础上加多一个参数即可。</p>
-<script type="math/tex; mode=display">P_{\lambda}(X^{(j)}=a_{jl},Y=c_k)=\frac{\sum \limits_{i=1}^NI(x_i^{(j)}=a_{jl},y_i=c_k)+\lambda} {\sum \limits_{i=1}^NI(y_i=c_k)+S_j\lambda},\lambda \geq 0</script><p>&emsp;&emsp;当<script type="math/tex">\lambda=0</script> 时就是最大似然估计。常取<script type="math/tex">\lambda=1</script> ，这时称为拉普拉斯平滑(Laplace smoothing)。</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>&emsp;&emsp;朴素贝叶斯法高效，且易于实现，但是其缺点就是分类的性能不一定很高。</p>
+        <h3 id="最大熵原理"><a href="#最大熵原理" class="headerlink" title="最大熵原理"></a>最大熵原理</h3><p>&emsp;&emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。</p>
+<p>首先回顾几个概念：</p>
+<p><strong>熵</strong></p>
+<p>&emsp;&emsp;假设离散随机变量<script type="math/tex">X</script> 的概率分布是<script type="math/tex">P(X)</script> ，则其熵为</p>
+<script type="math/tex; mode=display">H(P)=-\sum \limits_x P(x)\log P(x)</script><p>&emsp;&emsp;满足下列不等式:</p>
+<script type="math/tex; mode=display">0\leq H(P) \leq \log \left |X\right |</script><p><strong>联合熵和条件熵</strong></p>
+<p>&emsp;&emsp;两个随机变量的<script type="math/tex">X，Y</script> 的联合分布，可以形成联合熵，用<script type="math/tex">H(X,Y)</script> 表示</p>
+<p>条件熵<script type="math/tex">H(X|Y) = H(X,Y) - H(Y)</script> </p>
+<script type="math/tex; mode=display">H(X|Y) = H(X,Y) - H(Y)=-\sum \limits_{x,y} p(x,y)\log p(x|y)</script><p><strong>相对熵与互信息</strong></p>
+<p>&emsp;&emsp;设<script type="math/tex">p(x),q(x)</script> 是<script type="math/tex">X</script> 中取值的两个概率分布，则<script type="math/tex">p</script> 对<script type="math/tex">q</script> 的相对熵是：</p>
+<script type="math/tex; mode=display">D(p||q)=\sum \limits_x p(x) \log \frac{p(x)}{q(x)}=E_{p(x)}\log \frac{p(x)}{q(x)}</script><p>&emsp;&emsp;两个随机变量<script type="math/tex">X，Y</script> 的互信息，定义为<script type="math/tex">X，Y</script> 的联合分布和独立分布乘积的相对熵。</p>
+<script type="math/tex; mode=display">I(X,Y)=D(P(X,Y)||P(X)P(Y))</script><script type="math/tex; mode=display">I(X,Y)=\sum \limits_{x,y} p(x,y) \log \frac{p(x,y)}{p(x)p(y)}</script><p>直观讲， 最大熵原理认为要选择的概率模型</p>
+<p>  （1）首先必须满足已有的事实，即约束条件。</p>
+<p>  （2）在没有更多信息的情况下，就假设那些不确定的部分都是等可能的。</p>
+<p>&emsp;&emsp;但是等可能不容易操作，而熵是一个可优化的数值指标。最大熵原理通过熵的最大化来表示等可能性。</p>
+<h3 id="最大熵模型的定义"><a href="#最大熵模型的定义" class="headerlink" title="最大熵模型的定义"></a>最大熵模型的定义</h3><p>&emsp;&emsp;最大熵模型假设分类模型是一个条件概率分布<script type="math/tex">P(Y|X)</script> ,<script type="math/tex">X</script> 为特征，<script type="math/tex">Y</script> 为输出。</p>
+<p>&emsp;&emsp;给定一个训练集<script type="math/tex">T=\{(x_{1},y_{1}),(x_2,y_2),...，(x_N,y_N)\}</script> ,其中<script type="math/tex">x</script> 为<script type="math/tex">n</script> 维特征向量，<script type="math/tex">y</script> 为类别输出。我们的目标就是用最大熵模型选择一个最好的分类类型。</p>
+<p>&emsp;&emsp;在给定训练集的情况下，我们可以得到总体联合分布<script type="math/tex">P(X,Y)</script> 的经验分布<script type="math/tex">\tilde{P}(X,Y)</script> 和边缘分布<script type="math/tex">P(X)</script> 的经验分布<script type="math/tex">\tilde P(X)</script> 。<script type="math/tex">\tilde{P}(X,Y)</script> 即为训练集中<script type="math/tex">X,Y</script> 同时出现的次数除以样本总数<script type="math/tex">N</script> ，<script type="math/tex">\tilde P(X)</script> 即为训练集中<script type="math/tex">X</script> 出现的次数除以样本总数<script type="math/tex">N</script> 。</p>
+<p>&emsp;&emsp;用特征函数<script type="math/tex">f(x,y)</script> 描述输入<script type="math/tex">x</script> 和输出<script type="math/tex">y</script> 之间的关系。定义为：</p>
+<script type="math/tex; mode=display">f(x)=\begin{cases}1, & \text{ x与y满足某个关系 }  \\ 0, & \text{ 否则 } \end{cases}</script><p>&emsp;&emsp;可以认为只要出现在训练集中出现的<script type="math/tex">(x_i,y_i)</script> ,其<script type="math/tex">f(x_i,y_i)=1</script> . 同一个训练样本可以有多个约束特征函数。</p>
+<p>&emsp;&emsp;特征函数<script type="math/tex">f(x,y)</script> 关于经验分布<script type="math/tex">\tilde{P}(X,Y)</script> 的期望值，用<script type="math/tex">E_{\tilde P}(f)</script> 表示为:　</p>
+<script type="math/tex; mode=display">E_{\tilde P}(f)=\sum \limits_{x,y} \tilde P(x,y)f(x,y)</script><p>　　　</p>
+<p>&emsp;&emsp;特征函数<script type="math/tex">f(x,y)</script> 关于条件分布<script type="math/tex">P(Y|X)</script> 和经验分布<script type="math/tex">\tilde P(X)</script> 的期望值，用<script type="math/tex">E_P(f)</script> 表示为:</p>
+<script type="math/tex; mode=display">E_P(f)=\sum \limits_{x,y}\tilde P(x)P(y|x)f(x,y)</script><p>&emsp;&emsp;如果模型可以从训练集中学习，我们就可以假设这两个期望相等。即：</p>
+<script type="math/tex; mode=display">E_{\tilde P}(f)=E_P(f)</script><p>&emsp;&emsp;上式是最大熵模型学习的约束条件，假如我们有n个特征函数<script type="math/tex">f_i(x,y),i=1,2,...,n</script> 就有n个约束条件。</p>
+<p>&emsp;&emsp;这样我们就得到了最大熵模型的定义如下：</p>
+<p>&emsp;&emsp;假设满足所有约束条件的模型集合为：</p>
+<script type="math/tex; mode=display">E_{\tilde P}(f_i)=E_P(f_i),i=1,2,...,n</script><p>&emsp;&emsp;定义在条件概率分布<script type="math/tex">P(Y|X)</script> 上的条件熵为：</p>
+<script type="math/tex; mode=display">H(P)=−\sum \limits_{x,y}\tilde P(x)P(y|x)\log P(y|x)</script><p>&emsp;&emsp;我们的目标是得到使<script type="math/tex">H(P)</script> 最大的时候对应的<script type="math/tex">P(y|x)</script> ，这里可以对<script type="math/tex">H(P)</script> 加了个负号求极小值，这样做的目的是为了使<script type="math/tex">−H(P)</script> 为凸函数，方便使用凸优化的方法来求极值。</p>
+<h3 id="最大熵模型的学习"><a href="#最大熵模型的学习" class="headerlink" title="最大熵模型的学习"></a>最大熵模型的学习</h3><p>&emsp;&emsp;对于给定的训练数据集<script type="math/tex">T=\{（x_1，y_1）,（x_2，y_2）,(x_3，y_3),...,(x_n，y_n)\}</script> 以及特征函数<script type="math/tex">f_i(x,y),i=1,2,3,...,n</script> ，最大熵模型的学习等价于约束的最优化问题：</p>
+<script type="math/tex; mode=display">\begin{matrix}  \max \limits_{P \in C} & H(P)=-\sum \limits_{x,y} \tilde P(x)P(y|x)\log P(y|x) \\ s.t. & E_p(f_i)=E_{\tilde P},i=1,2,...,n \\ & \sum \limits_y P(y|x) =1 \end{matrix}</script><p>&emsp;&emsp;引入朗格朗日乘子<script type="math/tex">w</script> ，定义拉格朗日函数<script type="math/tex">L(P,w)</script> </p>
+<script type="math/tex; mode=display">\begin{align*} L(P,w) &= -H(P)+w_0 \left ( 1-\sum \limits_y P(y|x) \right ) +\sum \limits_{i=1}^{n} w_i(E_{\tilde P}(f_i)-E_p(f_i)) \\  &=\sum \limits_{x,y} \tilde P(x)P(y|x)\log P(y|x)+w_0\left( 1-\sum \limits_{y} P(y|x) \right) \\  &+\sum \limits_{x,y}^{n}w_i \left( \sum \limits_{x,y} \tilde P(x,y)f_i(x,y)-\sum \limits_{x,y} \tilde P(x)P(y|x)f_i(x,y) \right ) \end{align*}</script><p>最优化的原始问题：</p>
+<script type="math/tex; mode=display">\min \limits_{P \in C} \max \limits_w L(P,w)</script><p>对偶问题是：</p>
+<script type="math/tex; mode=display">\max \limits_w \min \limits_{P \in C} L(P,w)</script><p>&emsp;&emsp;由于L(P,W)是P的凸函数，原始问题的解与对偶问题的解是等价的。这里通过求对偶问题的解来求原始问题的解。</p>
+<p><strong>第一步求解内部极小化问题</strong>，记为：</p>
+<script type="math/tex; mode=display">\Psi(w)=\min \limits_{P \in C} L(P,w)=L(P_w,w)</script><p>通过微分求导，得出<script type="math/tex">P</script> 的解是：</p>
+<script type="math/tex; mode=display">P_w(y|x)=\frac{1}{Z_w(x)}\exp \left( \sum \limits_{i=1}^{n}w_if_i(x,y) \right)</script><script type="math/tex; mode=display">Z_w(x)=\sum \limits_y \exp \left ( \sum \limits_{i=1}^{n}w_if_i(x,y) \right)</script><p><strong>第二步求外部的极大化问题：</strong></p>
+<script type="math/tex; mode=display">\max \limits_w \Psi(w)</script><p>最后的解记为：</p>
+<script type="math/tex; mode=display">w^*=\arg \max \limits_w \Psi(w)</script><p><strong>第三步可以证明对偶函数的极大化等价于第一步求解出的P的极大似然估计</strong>，所以将最大熵模型写成更一般的形式.</p>
+<script type="math/tex; mode=display">P_w(y|x)=\frac{1}{Z_w(x)}\exp \left(\sum \limits_{i=1}^{n}w_if_i(x,y)\right)</script><script type="math/tex; mode=display">Z_w(x)=\sum \limits_y \exp \left ( \sum \limits_{i=1}^{n}w_if_i(x,y) \right)</script><h3 id="模型学习的最优化算法"><a href="#模型学习的最优化算法" class="headerlink" title="模型学习的最优化算法"></a>模型学习的最优化算法</h3><p>&emsp;&emsp;最大熵模型的学习最终可以归结为以最大熵模型似然函数为目标函数的优化问题。这时的目标函数是凸函数，因此有很多种方法都能保证找到全局最优解。例如改进的迭代尺度法(IIS)，梯度下降法，牛顿法或拟牛顿法，牛顿法或拟牛顿法一般收敛比较快。</p>
+<h4 id="算法-改进的迭代尺度算法IIS"><a href="#算法-改进的迭代尺度算法IIS" class="headerlink" title="算法  (改进的迭代尺度算法IIS)"></a>算法  (改进的迭代尺度算法IIS)</h4><p>输入：特征函数<script type="math/tex">f_1,f_2,...,f_n</script> ；经验分布<script type="math/tex">\tilde P(X,Y)</script> ，模型<script type="math/tex">P_w(y|x)</script> </p>
+<p>输出：最优参数值<script type="math/tex">w_i^*</script> ，最优模型<script type="math/tex">P_{w^*}</script> </p>
+<p>(1) 对所有<script type="math/tex">i\in \{ 1,2,...,n \}</script> ，取初值<script type="math/tex">w_i=0</script> </p>
+<p>(2) 对每一<script type="math/tex">i\in\{ 1,2,...,n \}</script> ：</p>
+<p>&emsp;&emsp;(a) 令<script type="math/tex">\delta_i</script> 是方程</p>
+<script type="math/tex; mode=display">\sum \limits_{x,y} \tilde P(x)P(y|x)f_i(x,y)\exp (\delta_i \sum \limits_{i=1}^n f_i(x,y))=E_{\tilde P}(f_i)</script><p>&emsp;&emsp;(b) 更新<script type="math/tex">w_i</script> ：<script type="math/tex">w_i\leftarrow w_i + \delta_i</script> </p>
+<p>(3) 如果不是所有<script type="math/tex">w_i</script> 都收敛，重复步(2).</p>
+<h4 id="算法-最大熵模型学习的BFGS算法"><a href="#算法-最大熵模型学习的BFGS算法" class="headerlink" title="算法  (最大熵模型学习的BFGS算法)"></a>算法  (最大熵模型学习的BFGS算法)</h4><p>输入：特征函数<script type="math/tex">f_1,f_2,...,f_n</script> ；经验分布<script type="math/tex">\tilde P(X,Y)</script> ，目标函数<script type="math/tex">f(w)</script> ，梯度<script type="math/tex">g(w)=\nabla f(w)</script> ，精度要求<script type="math/tex">\varepsilon</script> ；</p>
+<p>输出：最优参数值<script type="math/tex">w^*</script> ，最优模型<script type="math/tex">P_{w^*}(y|x)</script> </p>
+<p>(1) 选定初始点<script type="math/tex">w^{(0)}</script> ，取<script type="math/tex">B_0</script> 为正定对称矩阵，置<script type="math/tex">k=0</script> </p>
+<p>(2) 计算<script type="math/tex">g_k=g(w^{(k)})</script> .  若<script type="math/tex">\left \| g_k \right \|<\varepsilon</script> ，则停止计算，得<script type="math/tex">w^*=w^{(k)}</script> ；否则转(3)</p>
+<p>(3) 由<script type="math/tex">B_kp_k=-g_k</script> 求出<script type="math/tex">p_k</script> </p>
+<p>(4) 一维搜索：求<script type="math/tex">\lambda_k</script> 使得</p>
+<script type="math/tex; mode=display">f(w^{(k)}+\lambda_kp_k)=\min \limits_{\lambda \geq 0} f(w^{(k)}+\lambda p_k)</script><p>(5) 置<script type="math/tex">w^{(k+1)}=w^{(k)}+\lambda_kp_k</script> </p>
+<p>(6) 计算<script type="math/tex">g_{k+1}=g(w^{(k+1)})</script> ，若<script type="math/tex">\left \| g_k \right \|<\varepsilon</script> ，则停止计算，得<script type="math/tex">w^*=w^{(k)}</script> ；否则，按下式求出<script type="math/tex">B_{k+1}</script> ：</p>
+<script type="math/tex; mode=display">B_{k+1}=B_{k}+\frac{y_ky_k^T}{y_k^T\delta_k}-\frac{B_k\delta_k\delta_k^T B_k}{\delta_k^TB_k\delta_k}</script><p>其中，</p>
+<script type="math/tex; mode=display">\begin{matrix} y_k=g_{k+1}-g_k, & \delta_k=w^{(k+1)}-w^{(k)} \end{matrix}</script><p>(7) 置<script type="math/tex">k=k+1</script> ，转(3).</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p><strong>最大熵模型的优点：</strong></p>
+<ol>
+<li>最大熵统计模型获得的是所有满足约束条件的模型中信息熵极大的模型,作为经典的分类模型时准确率较高。</li>
+<li>可以灵活地设置约束条件，通过约束条件的多少可以调节模型对未知数据的适应度和对已知数据的拟合程度</li>
+</ol>
+<p><strong>最大熵模型的缺点：</strong></p>
+<ol>
+<li>由于约束函数数量和样本数目有关系，导致迭代过程计算量巨大，实际应用比较难。</li>
+</ol>
 <h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ol>
-<li><a href="https://www.cnblogs.com/juefan/p/3807715.html" target="_blank" rel="noopener">统计学习方法（四）——朴素贝叶斯法</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/2013/12/naive_bayes_classifier.html" target="_blank" rel="noopener">朴素贝叶斯分类器的应用</a></li>
-<li><a href="https://www.cnblogs.com/bethansy/p/7435740.html" target="_blank" rel="noopener">李航统计学习方法——算法3朴素贝叶斯法</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/30333160" target="_blank" rel="noopener">李航《统计学习方法》朴素贝叶斯分类器实现</a></li>
+<li><a href="https://www.cnblogs.com/wxquare/p/5858008.html" target="_blank" rel="noopener">一步一步理解最大熵模型</a></li>
+<li><a href="https://www.cnblogs.com/pinard/p/6093948.html" target="_blank" rel="noopener">最大熵模型原理小结</a></li>
 </ol>
 
       
@@ -599,12 +629,12 @@ $(function() {
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/02/21/naive_Bayes/">机器学习入门之《统计学习方法》笔记——朴素贝叶斯法</a></p>
+  <p><span>本文标题:</span><a href="/2018/03/03/maximum_entropy/">机器学习入门之《统计学习方法》笔记整理——最大熵模型</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Quanfita 的个人博客">Quanfita</a></p>
-  <p><span>发布时间:</span>2018年02月21日 - 19:02</p>
-  <p><span>最后更新:</span>2018年02月23日 - 12:02</p>
-  <p><span>原始链接:</span><a href="/2018/02/21/naive_Bayes/" title="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">http://quanfita.cn/2018/02/21/naive_Bayes/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/02/21/naive_Bayes/"  aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2018年03月03日 - 23:03</p>
+  <p><span>最后更新:</span>2018年03月03日 - 23:03</p>
+  <p><span>原始链接:</span><a href="/2018/03/03/maximum_entropy/" title="机器学习入门之《统计学习方法》笔记整理——最大熵模型">http://quanfita.cn/2018/03/03/maximum_entropy/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/03/03/maximum_entropy/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -666,7 +696,7 @@ $(function() {
           
             <a href="/tags/Machine-Learning/" rel="tag"><i class="fa fa-tag"></i> Machine Learning</a>
           
-            <a href="/tags/Naive-Bayes/" rel="tag"><i class="fa fa-tag"></i> Naive Bayes</a>
+            <a href="/tags/最大熵模型/" rel="tag"><i class="fa fa-tag"></i> 最大熵模型</a>
           
         </div>
       
@@ -679,8 +709,8 @@ $(function() {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/12/k_NN/" rel="next" title="机器学习入门之《统计学习方法》笔记整理——K近邻法">
-                <i class="fa fa-chevron-left"></i> 机器学习入门之《统计学习方法》笔记整理——K近邻法
+              <a href="/2018/03/03/logistic_regression/" rel="next" title="机器学习入门之《统计学习方法》笔记整理——逻辑斯谛回归">
+                <i class="fa fa-chevron-left"></i> 机器学习入门之《统计学习方法》笔记整理——逻辑斯谛回归
               </a>
             
           </div>
@@ -689,8 +719,8 @@ $(function() {
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/21/NewBlog/" rel="prev" title="终于完成博客的搭建工作了，欢迎大家访问">
-                终于完成博客的搭建工作了，欢迎大家访问 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/03/decision_tree/" rel="prev" title="机器学习入门之《统计学习方法》笔记整理——决策树">
+                机器学习入门之《统计学习方法》笔记整理——决策树 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -900,7 +930,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#朴素贝叶斯法"><span class="nav-number">1.</span> <span class="nav-text">朴素贝叶斯法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数估计"><span class="nav-number">2.</span> <span class="nav-text">参数估计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#极大似然估计"><span class="nav-number">2.1.</span> <span class="nav-text">极大似然估计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#学习与分类算法"><span class="nav-number">2.2.</span> <span class="nav-text">学习与分类算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算法-朴素贝叶斯算法"><span class="nav-number">2.2.1.</span> <span class="nav-text">算法  (朴素贝叶斯算法)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贝叶斯估计"><span class="nav-number">2.3.</span> <span class="nav-text">贝叶斯估计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文章"><span class="nav-number">4.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#最大熵原理"><span class="nav-number">1.</span> <span class="nav-text">最大熵原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最大熵模型的定义"><span class="nav-number">2.</span> <span class="nav-text">最大熵模型的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最大熵模型的学习"><span class="nav-number">3.</span> <span class="nav-text">最大熵模型的学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模型学习的最优化算法"><span class="nav-number">4.</span> <span class="nav-text">模型学习的最优化算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算法-改进的迭代尺度算法IIS"><span class="nav-number">4.1.</span> <span class="nav-text">算法  (改进的迭代尺度算法IIS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#算法-最大熵模型学习的BFGS算法"><span class="nav-number">4.2.</span> <span class="nav-text">算法  (最大熵模型学习的BFGS算法)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number"></span> <span class="nav-text">小结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文章"><span class="nav-number"></span> <span class="nav-text">参考文章</span></a></div>
             
 
           </div>

@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://quanfita.cn/2018/03/03/maximum_entropy/</loc>
+    
+    <lastmod>2018-03-03T15:25:04.274Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/03/03/logistic_regression/</loc>
+    
+    <lastmod>2018-03-03T15:23:21.086Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/03/03/decision_tree/</loc>
+    
+    <lastmod>2018-03-03T15:21:55.049Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://quanfita.cn/2018/02/21/naive_Bayes/</loc>
     
     <lastmod>2018-02-23T04:46:18.095Z</lastmod>
