@@ -88,19 +88,19 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;决策树是一种基本的分类和回归算法。&amp;emsp;&amp;emsp;决策树模型呈树形结构，可以认为是if-then规则的集合，也可以认为是定义在特征空间与类空间上的条件概率分布。&amp;emsp;&amp;emsp;决策树模型由结点和有向边组成，结点分为内部结点和叶结点，内部结点表示特征，叶结点表示类，有向边表示某一特征的取值。 决策树模型与学习决策树模型&amp;emsp;&amp;emsp;分类决策树模型是一">
+<meta name="description" content="&amp;emsp;&amp;emsp;决策树是一种基本的分类和回归算法。&amp;emsp;&amp;emsp;决策树模型呈树形结构，可以认为是if-then规则的集合，也可以认为是定义在特征空间与类空间上的条件概率分布。&amp;emsp;&amp;emsp;决策树模型由结点和有向边组成，结点分为内部结点和叶结点，内部结点表示特征，叶结点表示类，有向边表示某一特征的取值。 决策树模型与学习决策树模型&amp;emsp;&amp;emsp;分类决策树模型">
 <meta name="keywords" content="Machine Learning,决策树">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习入门之《统计学习方法》笔记整理——决策树">
 <meta property="og:url" content="http://quanfita.cn/2018/03/03/decision_tree/index.html">
 <meta property="og:site_name" content="Quanfita&#39;s Blogs">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;决策树是一种基本的分类和回归算法。&amp;emsp;&amp;emsp;决策树模型呈树形结构，可以认为是if-then规则的集合，也可以认为是定义在特征空间与类空间上的条件概率分布。&amp;emsp;&amp;emsp;决策树模型由结点和有向边组成，结点分为内部结点和叶结点，内部结点表示特征，叶结点表示类，有向边表示某一特征的取值。 决策树模型与学习决策树模型&amp;emsp;&amp;emsp;分类决策树模型是一">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;决策树是一种基本的分类和回归算法。&amp;emsp;&amp;emsp;决策树模型呈树形结构，可以认为是if-then规则的集合，也可以认为是定义在特征空间与类空间上的条件概率分布。&amp;emsp;&amp;emsp;决策树模型由结点和有向边组成，结点分为内部结点和叶结点，内部结点表示特征，叶结点表示类，有向边表示某一特征的取值。 决策树模型与学习决策树模型&amp;emsp;&amp;emsp;分类决策树模型">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20180303165520146?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-03-03T15:21:55.049Z">
+<meta property="og:updated_time" content="2018-03-04T00:19:05.035Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习入门之《统计学习方法》笔记整理——决策树">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;决策树是一种基本的分类和回归算法。&amp;emsp;&amp;emsp;决策树模型呈树形结构，可以认为是if-then规则的集合，也可以认为是定义在特征空间与类空间上的条件概率分布。&amp;emsp;&amp;emsp;决策树模型由结点和有向边组成，结点分为内部结点和叶结点，内部结点表示特征，叶结点表示类，有向边表示某一特征的取值。 决策树模型与学习决策树模型&amp;emsp;&amp;emsp;分类决策树模型是一">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;决策树是一种基本的分类和回归算法。&amp;emsp;&amp;emsp;决策树模型呈树形结构，可以认为是if-then规则的集合，也可以认为是定义在特征空间与类空间上的条件概率分布。&amp;emsp;&amp;emsp;决策树模型由结点和有向边组成，结点分为内部结点和叶结点，内部结点表示特征，叶结点表示类，有向边表示某一特征的取值。 决策树模型与学习决策树模型&amp;emsp;&amp;emsp;分类决策树模型">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20180303165520146?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 
 
@@ -535,7 +535,9 @@ $(function() {
       
 
       
-        <p>&emsp;&emsp;决策树是一种基本的分类和回归算法。<br>&emsp;&emsp;决策树模型呈树形结构，可以认为是if-then规则的集合，也可以认为是定义在特征空间与类空间上的条件概率分布。<br>&emsp;&emsp;决策树模型由结点和有向边组成，结点分为内部结点和叶结点，内部结点表示特征，叶结点表示类，有向边表示某一特征的取值。</p>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<p>&emsp;&emsp;决策树是一种基本的分类和回归算法。<br>&emsp;&emsp;决策树模型呈树形结构，可以认为是if-then规则的集合，也可以认为是定义在特征空间与类空间上的条件概率分布。<br>&emsp;&emsp;决策树模型由结点和有向边组成，结点分为内部结点和叶结点，内部结点表示特征，叶结点表示类，有向边表示某一特征的取值。</p>
 <h2 id="决策树模型与学习"><a href="#决策树模型与学习" class="headerlink" title="决策树模型与学习"></a>决策树模型与学习</h2><h3 id="决策树模型"><a href="#决策树模型" class="headerlink" title="决策树模型"></a>决策树模型</h3><p>&emsp;&emsp;分类决策树模型是一种描述对实例进行分类的树形结构。决策树由结点（node）和有向边（directed edge）组成。结点有两种类型：内结点（internal node）和叶结点（leaf node）。内部结点表示一个特征或者属性，叶结点表示一个类。</p>
 <h3 id="决策树与if-then规则"><a href="#决策树与if-then规则" class="headerlink" title="决策树与if-then规则"></a>决策树与if-then规则</h3><p>&emsp;&emsp;可以将决策树看成是一个if-then规则的集合。将决策树转化成if-then规则的过程是这样的：由决策树的根结点到叶结点的每一条路径构建一条规则;路径上内部结点的特征对应着规则的条件，而叶结点的类对应着规则的结论。</p>
 <h3 id="决策树与条件概率分布"><a href="#决策树与条件概率分布" class="headerlink" title="决策树与条件概率分布"></a>决策树与条件概率分布</h3><p>&emsp;&emsp;决策树还表示给定特征条件下的类的条件概率分布。这一条件概率分布定义在特征空间的一个划分（partition）上。将特征空间划分为互不相交的单元（cell）或者区域（region），并在每个单元定义一个类的概率分布就构成了一个条件概率分布。 </p>
@@ -716,7 +718,7 @@ $$P(X=x_i)=p_i, i=1,2,...,n</script><p>&emsp;&emsp;则随机变量<script type="
   <p><span>本文标题:</span><a href="/2018/03/03/decision_tree/">机器学习入门之《统计学习方法》笔记整理——决策树</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Quanfita 的个人博客">Quanfita</a></p>
   <p><span>发布时间:</span>2018年03月03日 - 23:03</p>
-  <p><span>最后更新:</span>2018年03月03日 - 23:03</p>
+  <p><span>最后更新:</span>2018年03月04日 - 08:03</p>
   <p><span>原始链接:</span><a href="/2018/03/03/decision_tree/" title="机器学习入门之《统计学习方法》笔记整理——决策树">http://quanfita.cn/2018/03/03/decision_tree/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/03/03/decision_tree/"  aria-label="复制成功！"></i></span>
   </p>

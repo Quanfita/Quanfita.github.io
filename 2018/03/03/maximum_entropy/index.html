@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="最大熵原理&amp;emsp;&amp;emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。 首先回顾几个概念： 熵 &amp;emsp;&amp;emsp;假设离散随机变量X 的概率分布是P(X) ，则其熵为 H(P)=-\sum \limit">
+<meta name="description" content="最大熵原理&amp;emsp;&amp;emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。 首先回顾几个概念： 熵 &amp;emsp;&amp;emsp;假设离散随机变量X 的概率分布是P(X) ，则其熵为 H(P)=-\sum \lim">
 <meta name="keywords" content="Machine Learning,最大熵模型">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习入门之《统计学习方法》笔记整理——最大熵模型">
 <meta property="og:url" content="http://quanfita.cn/2018/03/03/maximum_entropy/index.html">
 <meta property="og:site_name" content="Quanfita&#39;s Blogs">
-<meta property="og:description" content="最大熵原理&amp;emsp;&amp;emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。 首先回顾几个概念： 熵 &amp;emsp;&amp;emsp;假设离散随机变量X 的概率分布是P(X) ，则其熵为 H(P)=-\sum \limit">
+<meta property="og:description" content="最大熵原理&amp;emsp;&amp;emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。 首先回顾几个概念： 熵 &amp;emsp;&amp;emsp;假设离散随机变量X 的概率分布是P(X) ，则其熵为 H(P)=-\sum \lim">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-03T15:25:04.274Z">
+<meta property="og:updated_time" content="2018-03-04T00:19:31.789Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习入门之《统计学习方法》笔记整理——最大熵模型">
-<meta name="twitter:description" content="最大熵原理&amp;emsp;&amp;emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。 首先回顾几个概念： 熵 &amp;emsp;&amp;emsp;假设离散随机变量X 的概率分布是P(X) ，则其熵为 H(P)=-\sum \limit">
+<meta name="twitter:description" content="最大熵原理&amp;emsp;&amp;emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。 首先回顾几个概念： 熵 &amp;emsp;&amp;emsp;假设离散随机变量X 的概率分布是P(X) ，则其熵为 H(P)=-\sum \lim">
 
 
 
@@ -533,7 +533,9 @@ $(function() {
       
 
       
-        <h3 id="最大熵原理"><a href="#最大熵原理" class="headerlink" title="最大熵原理"></a>最大熵原理</h3><p>&emsp;&emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。</p>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<h3 id="最大熵原理"><a href="#最大熵原理" class="headerlink" title="最大熵原理"></a>最大熵原理</h3><p>&emsp;&emsp;最大熵原理是概率模型学习的一个准则，最大熵原理认为，学习概率模型时，在所有的可能的概率模型中，熵最大的模型是最好的模型。通常用约束条件来确定概率模型的集合，所以，熵最大原理也可以描述为在满足约束条件的模型集合中选取熵最大的模型。</p>
 <p>首先回顾几个概念：</p>
 <p><strong>熵</strong></p>
 <p>&emsp;&emsp;假设离散随机变量<script type="math/tex">X</script> 的概率分布是<script type="math/tex">P(X)</script> ，则其熵为</p>
@@ -632,7 +634,7 @@ $(function() {
   <p><span>本文标题:</span><a href="/2018/03/03/maximum_entropy/">机器学习入门之《统计学习方法》笔记整理——最大熵模型</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Quanfita 的个人博客">Quanfita</a></p>
   <p><span>发布时间:</span>2018年03月03日 - 23:03</p>
-  <p><span>最后更新:</span>2018年03月03日 - 23:03</p>
+  <p><span>最后更新:</span>2018年03月04日 - 08:03</p>
   <p><span>原始链接:</span><a href="/2018/03/03/maximum_entropy/" title="机器学习入门之《统计学习方法》笔记整理——最大熵模型">http://quanfita.cn/2018/03/03/maximum_entropy/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/03/03/maximum_entropy/"  aria-label="复制成功！"></i></span>
   </p>
