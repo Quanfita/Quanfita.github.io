@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Machine Learning,Naive Bayes," />
+  <meta name="keywords" content="计算机网络," />
 
 
 
@@ -88,20 +88,25 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X">
-<meta name="keywords" content="Machine Learning,Naive Bayes">
+<meta name="description" content="因特网所有接入因特网的设备都称为主机 或端系统。 主机通过通信链路和分组交换机连接，路由器和链路层交换机都是分组交换机。 一个分组所经历的一系列通信链路和分组交换机称为通过该网络的路径。 ISP是因特网服务供应商，有不同层级，每个ISP是一个由多个分组交换机和多段通信链路组成的网络。 协议控制着因特网中信息的接收和发送。因特网的主要协议统称为TCP/IP。  TCP 可靠 面向连接  确保传递">
+<meta name="keywords" content="计算机网络">
 <meta property="og:type" content="article">
-<meta property="og:title" content="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">
-<meta property="og:url" content="http://quanfita.cn/2018/02/21/naive_Bayes/index.html">
+<meta property="og:title" content="计算机网络笔记整理——绪论">
+<meta property="og:url" content="http://quanfita.cn/2018/03/11/Internet/index.html">
 <meta property="og:site_name" content="Quanfita&#39;s Blogs">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X">
+<meta property="og:description" content="因特网所有接入因特网的设备都称为主机 或端系统。 主机通过通信链路和分组交换机连接，路由器和链路层交换机都是分组交换机。 一个分组所经历的一系列通信链路和分组交换机称为通过该网络的路径。 ISP是因特网服务供应商，有不同层级，每个ISP是一个由多个分组交换机和多段通信链路组成的网络。 协议控制着因特网中信息的接收和发送。因特网的主要协议统称为TCP/IP。  TCP 可靠 面向连接  确保传递">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://img.blog.csdn.net/20180221194837856?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-02-23T04:46:18.095Z">
+<meta property="og:image" content="http://img.blog.csdn.net/20180311155659592?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://img.blog.csdn.net/20180311155759387?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://img.blog.csdn.net/20180311155906494?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://img.blog.csdn.net/20180311155922915?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://img.blog.csdn.net/20180311160209121?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://img.blog.csdn.net/20180311160251696?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:updated_time" content="2018-03-11T08:08:34.874Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。 朴素贝叶斯法&amp;emsp;&amp;emsp;设输入空间X\subseteq \mathbb{R}^n 为n 维向量的集合，输出空间为类标记集合Y=\left \{ c_1,c_2,...,c_K \right \} ，输入特征向量x \in X ，输出类标记为y\in Y ，P(X,Y) 是X">
-<meta name="twitter:image" content="http://img.blog.csdn.net/20180221194837856?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta name="twitter:title" content="计算机网络笔记整理——绪论">
+<meta name="twitter:description" content="因特网所有接入因特网的设备都称为主机 或端系统。 主机通过通信链路和分组交换机连接，路由器和链路层交换机都是分组交换机。 一个分组所经历的一系列通信链路和分组交换机称为通过该网络的路径。 ISP是因特网服务供应商，有不同层级，每个ISP是一个由多个分组交换机和多段通信链路组成的网络。 协议控制着因特网中信息的接收和发送。因特网的主要协议统称为TCP/IP。  TCP 可靠 面向连接  确保传递">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20180311155659592?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 
 
 
@@ -131,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://quanfita.cn/2018/02/21/naive_Bayes/"/>
+  <link rel="canonical" href="http://quanfita.cn/2018/03/11/Internet/"/>
 
 
 
 
 
-  <title>机器学习入门之《统计学习方法》笔记——朴素贝叶斯法 | Quanfita's Blogs</title>
+  <title>计算机网络笔记整理——绪论 | Quanfita's Blogs</title>
   
 
 
@@ -425,7 +430,7 @@ $(function() {
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://quanfita.cn/2018/02/21/naive_Bayes/">
+    <link itemprop="mainEntityOfPage" href="http://quanfita.cn/2018/03/11/Internet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Quanfita">
@@ -442,7 +447,7 @@ $(function() {
 
         
         
-          <h1 class="post-title" itemprop="name headline">机器学习入门之《统计学习方法》笔记——朴素贝叶斯法</h1>
+          <h1 class="post-title" itemprop="name headline">计算机网络笔记整理——绪论</h1>
         
 
         <div class="post-meta">
@@ -454,8 +459,8 @@ $(function() {
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-21T19:57:46+08:00">
-                2018-02-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-11T16:06:09+08:00">
+                2018-03-11
               </time>
             
 
@@ -495,8 +500,8 @@ $(function() {
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/02/21/naive_Bayes/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/21/naive_Bayes/" itemprop="commentsCount"></span>
+                <a href="/2018/03/11/Internet/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/03/11/Internet/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -504,7 +509,7 @@ $(function() {
 
           
           
-             <span id="/2018/02/21/naive_Bayes/" class="leancloud_visitors" data-flag-title="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">
+             <span id="/2018/03/11/Internet/" class="leancloud_visitors" data-flag-title="计算机网络笔记整理——绪论">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -537,42 +542,201 @@ $(function() {
       
         <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-<p>&emsp;&emsp;朴素贝叶斯(naive Bayes)法是基于贝叶斯定理与特征条件独立假设的分类方法。</p>
-<h2 id="朴素贝叶斯法"><a href="#朴素贝叶斯法" class="headerlink" title="朴素贝叶斯法"></a>朴素贝叶斯法</h2><p>&emsp;&emsp;设输入空间<script type="math/tex">X\subseteq \mathbb{R}^n</script> 为<script type="math/tex">n</script> 维向量的集合，输出空间为类标记集合<script type="math/tex">Y=\left \{ c_1,c_2,...,c_K \right \}</script> ，输入特征向量<script type="math/tex">x \in X</script> ，输出类标记为<script type="math/tex">y\in Y</script> ，<script type="math/tex">P(X,Y)</script> 是<script type="math/tex">X</script> 和<script type="math/tex">Y</script> 的联合概率分布，数据集</p>
-<script type="math/tex; mode=display">T = \left \{ (x_1,y_1),(x_2,y_2),...,(x_n,y_n) \right \}</script><p>由<script type="math/tex">P(X,Y)</script> 独立同分布产生。</p>
-<p>&emsp;&emsp;朴素贝叶斯法就是通过训练集来学习联合概率分布<script type="math/tex">P(X,Y)</script> .具体就是从先验概率分布和条件概率分布入手，俩概率相乘即可得联合概率。</p>
-<p>&emsp;&emsp;称之为朴素是因为将条件概率的估计简化了，对条件概率分布作了条件独立性假设，这也是朴素贝叶斯法的基石，假设如下</p>
-<script type="math/tex; mode=display">P(X=x|Y=c_k)=P(X^{(1)}=x^{(1)},...,X^{(n)}=x^{(n)}|Y=c_k), k=1,2,...,K</script><p>&emsp;&emsp;这个公式在之前的假设条件下等价于</p>
-<script type="math/tex; mode=display">\prod \limits_{j=i}^n P(X^{(j)}=x^{(j)}|Y=c_k)</script><p>&emsp;&emsp;对于给定的输入向量<script type="math/tex">x</script> ,通过学习到的模型计算后验概率分布<script type="math/tex">P(Y=C_k|X=x)</script> ，后验分布中最大的类作为<script type="math/tex">x</script> 的输出结果，根据贝叶斯定理可知后验概率为</p>
-<script type="math/tex; mode=display">P(Y=c_k|X=x)=\frac{P(X=x|Y=c_k)P(Y=c_k)}{\sum_kP(X=x|Y=c_k)P(Y=c_k)}</script><p>&emsp;&emsp;其中<script type="math/tex">\sum_kP(X=x|Y=c_k)P(Y=c_k)\Leftrightarrow P(X=x)</script> </p>
-<p>&emsp;&emsp;所有<script type="math/tex">c_k</script> 的<script type="math/tex">P(X=x)</script> 都是相同的，这样我们可以把输出结果化简成</p>
-<script type="math/tex; mode=display">y = arg \max \limits_{c_k} P(Y=c_k) \prod_jP(X^{(j)}=x^{(j)}|Y=c_k)</script><p>&emsp;&emsp;这样，就了解了朴素贝叶斯法的基本原理了，下面要介绍的是参数估计。</p>
-<h2 id="参数估计"><a href="#参数估计" class="headerlink" title="参数估计"></a>参数估计</h2><h3 id="极大似然估计"><a href="#极大似然估计" class="headerlink" title="极大似然估计"></a>极大似然估计</h3><p>&emsp;&emsp;我们已经知道对于给定的输入向量<script type="math/tex">x</script> ，其输出结果可以表示为</p>
-<script type="math/tex; mode=display">y = arg \max \limits_{c_k} P(Y=c_k) \prod_jP(X^{(j)}=x^{(j)}|Y=c_k)</script><p>&emsp;&emsp;可以使用极大似然估计法来估计相应的概率。先验概率<script type="math/tex">P(Y=c_k)</script> 的极大似然估计是</p>
-<script type="math/tex; mode=display">P(Y=c_k)=\frac{\sum \limits_{i=1}^NI(y_i=c_k)} {N}, k=1,2,...,K</script><p>&emsp;&emsp; 设第<script type="math/tex">j</script> 个特征<script type="math/tex">x^{(j)}</script> 可能的取值的集合为<script type="math/tex">\left \{ a_{j1} ,a_{j2} ,...,a_{js_j} \right \}</script> ，条件概率<script type="math/tex">P(X^{(j)}=a_{jl}|Y=c_k)</script> 的极大似然估计是</p>
-<script type="math/tex; mode=display">P(X^{(j)}=a_{jl},Y=c_k)=\frac{\sum \limits_{i=1}^NI(x_i^{(j)}=a_{jl},y_i=c_k)} {\sum \limits_{i=1}^NI(y_i=c_k)}</script><script type="math/tex; mode=display">j=1,2,...,n; l=1,2,...,S_j;k=1,2,...,K</script><h3 id="学习与分类算法"><a href="#学习与分类算法" class="headerlink" title="学习与分类算法"></a>学习与分类算法</h3><p>&emsp;&emsp;下面给出朴素贝叶斯法的学习与分类算法。</p>
-<h4 id="算法-朴素贝叶斯算法"><a href="#算法-朴素贝叶斯算法" class="headerlink" title="算法  (朴素贝叶斯算法)"></a>算法  (朴素贝叶斯算法)</h4><p>输入: 训练数据 <script type="math/tex">T = \left \{ (x_1,y_1),(x_2,y_2),...,(x_n,y_n) \right \}</script> , 其中<script type="math/tex">x_i = (x_i^{(1)},x_i^{(2)},...,x_i^{(n)} )^T</script> ，<script type="math/tex">x_i^{(j)}\in \left \{ a_{j1} ,a_{j2} ,...,a_{js_j} \right \}</script> ，<script type="math/tex">j=1,2,...,n</script> ，<script type="math/tex">l=1,2,...,S_j</script> ，<script type="math/tex">y_i \in  \left \{ c_1,c_2,...,c_K \right \}</script> ；实例<script type="math/tex">x</script> ；</p>
-<p>输出: 实例<script type="math/tex">x</script> 的分类.</p>
-<p>(1) 计算先验概率及条件概率</p>
-<script type="math/tex; mode=display">P(Y=c_k)=\frac{\sum \limits_{i=1}^NI(y_i=c_k)} {N}, k=1,2,...,K</script><script type="math/tex; mode=display">P(X^{(j)}=a_{jl},Y=c_k)=\frac{\sum \limits_{i=1}^NI(x_i^{(j)}=a_{jl},y_i=c_k)} {\sum \limits_{i=1}^NI(y_i=c_k)}</script><script type="math/tex; mode=display">j=1,2,...,n; l=1,2,...,S_j;k=1,2,...,K</script><p>(2) 对于给定的实例<script type="math/tex">x = (x^{(1)},x^{(2)},...,x^{(n)} )^T</script> ，计算</p>
-<script type="math/tex; mode=display">P(Y=c_k) \prod_jP(X^{(j)}=x^{(j)}|Y=c_k),k=1,2,...,K</script><p>(3) 确定实例<script type="math/tex">x</script> 的类</p>
-<script type="math/tex; mode=display">y = arg \max \limits_{c_k} P(Y=c_k) \prod_jP(X^{(j)}=x^{(j)}|Y=c_k)</script><p><strong>例子</strong>：试由下表的训练数据学习一个朴素贝叶斯分类器并确定<script type="math/tex">x=(2,S)^T</script> 的类标记，表中<script type="math/tex">X^{(1)},X^{(2)}</script> 为特征，<script type="math/tex">Y</script> 为类标记。</p>
-<p><img src="http://img.blog.csdn.net/20180221194837856?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
-<p>python代码如下:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment">#构造NB分类器</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Train</span><span class="params">(X_train, Y_train, feature)</span>:</span></span><br><span class="line">    <span class="keyword">global</span> class_num,label</span><br><span class="line">    class_num = <span class="number">2</span>           <span class="comment">#分类数目</span></span><br><span class="line">    label = [<span class="number">1</span>, <span class="number">-1</span>]         <span class="comment">#分类标签</span></span><br><span class="line">    feature_len = <span class="number">3</span>         <span class="comment">#特征长度</span></span><br><span class="line">    <span class="comment">#构造3×2的列表</span></span><br><span class="line">    feature = [[<span class="number">1</span>, <span class="string">'S'</span>],    </span><br><span class="line">               [<span class="number">2</span>, <span class="string">'M'</span>],</span><br><span class="line">               [<span class="number">3</span>, <span class="string">'L'</span>]]</span><br><span class="line"></span><br><span class="line">    prior_prob = np.zeros(class_num)                         <span class="comment"># 初始化先验概率</span></span><br><span class="line">    con_prob = np.zeros((class_num,feature_len,<span class="number">2</span>))   <span class="comment"># 初始化条件概率</span></span><br><span class="line">    </span><br><span class="line">    positive_count = <span class="number">0</span>     <span class="comment">#统计正类</span></span><br><span class="line">    negative_count = <span class="number">0</span>     <span class="comment">#统计负类</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(Y_train)):</span><br><span class="line">        <span class="keyword">if</span> Y_train[i] == <span class="number">1</span>:</span><br><span class="line">            positive_count += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            negative_count += <span class="number">1</span></span><br><span class="line">    prior_prob[<span class="number">0</span>] = positive_count / len(Y_train)    <span class="comment">#求得正类的先验概率</span></span><br><span class="line">    prior_prob[<span class="number">1</span>] = negative_count / len(Y_train)    <span class="comment">#求得负类的先验概率</span></span><br><span class="line">    </span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    con_prob是一个2*3*2的三维列表，第一维是类别分类，第二维和第三维是一个3*2的特征分类</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment">#分为两个类别</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(class_num):</span><br><span class="line">        <span class="comment">#对特征按行遍历</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(feature_len):</span><br><span class="line">            <span class="comment">#遍历数据集，并依次做判断</span></span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> range(len(Y_train)): </span><br><span class="line">                <span class="keyword">if</span> Y_train[k] == label[i]: <span class="comment">#相同类别</span></span><br><span class="line">                    <span class="keyword">if</span> X_train[k][<span class="number">0</span>] == feature[j][<span class="number">0</span>]:</span><br><span class="line">                        con_prob[i][j][<span class="number">0</span>] += <span class="number">1</span></span><br><span class="line">                    <span class="keyword">if</span> X_train[k][<span class="number">1</span>] == feature[j][<span class="number">1</span>]:</span><br><span class="line">                        con_prob[i][j][<span class="number">1</span>] += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    class_label_num = [positive_count, negative_count]  <span class="comment">#存放各类型的数目</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(class_num):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(feature_len):</span><br><span class="line">            con_prob[i][j][<span class="number">0</span>] = con_prob[i][j][<span class="number">0</span>] / class_label_num[i]  <span class="comment">#求得i类j行第一个特征的条件概率 </span></span><br><span class="line">            con_prob[i][j][<span class="number">1</span>] = con_prob[i][j][<span class="number">1</span>] / class_label_num[i]  <span class="comment">#求得i类j行第二个特征的条件概率</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> prior_prob,con_prob</span><br><span class="line"></span><br><span class="line"><span class="comment">#给定数据进行分类</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Predict</span><span class="params">(testset, prior_prob, con_prob, feature)</span>:</span></span><br><span class="line">    result = np.zeros(len(label))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(class_num):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(feature)):</span><br><span class="line">            <span class="keyword">if</span> feature[j][<span class="number">0</span>] == testset[<span class="number">0</span>]:</span><br><span class="line">                conA = con_prob[i][j][<span class="number">0</span>]</span><br><span class="line">            <span class="keyword">if</span> feature[j][<span class="number">1</span>] == testset[<span class="number">1</span>]:</span><br><span class="line">                conB = con_prob[i][j][<span class="number">1</span>]</span><br><span class="line">        result[i] = conA * conB * prior_prob[i]</span><br><span class="line"></span><br><span class="line">    result = np.vstack([result,label])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    X_train = [[<span class="number">1</span>, <span class="string">'S'</span>], [<span class="number">1</span>, <span class="string">'M'</span>], [<span class="number">1</span>, <span class="string">'M'</span>], [<span class="number">1</span>, <span class="string">'S'</span>],  [<span class="number">1</span>, <span class="string">'S'</span>],</span><br><span class="line">               [<span class="number">2</span>, <span class="string">'S'</span>], [<span class="number">2</span>, <span class="string">'M'</span>], [<span class="number">2</span>, <span class="string">'M'</span>], [<span class="number">2</span>, <span class="string">'L'</span>],  [<span class="number">2</span>, <span class="string">'L'</span>],</span><br><span class="line">               [<span class="number">3</span>, <span class="string">'L'</span>], [<span class="number">3</span>, <span class="string">'M'</span>], [<span class="number">3</span>, <span class="string">'M'</span>], [<span class="number">3</span>, <span class="string">'L'</span>],  [<span class="number">3</span>, <span class="string">'L'</span>]]</span><br><span class="line">    Y_train = [<span class="number">-1</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">-1</span>]   </span><br><span class="line"></span><br><span class="line">    <span class="comment">#构造3×2的列表</span></span><br><span class="line">    feature = [[<span class="number">1</span>, <span class="string">'S'</span>],    </span><br><span class="line">               [<span class="number">2</span>, <span class="string">'M'</span>],</span><br><span class="line">               [<span class="number">3</span>, <span class="string">'L'</span>]]</span><br><span class="line"></span><br><span class="line">    testset = [<span class="number">2</span>, <span class="string">'S'</span>]</span><br><span class="line">    </span><br><span class="line">    prior_prob, con_prob= Train(X_train, Y_train, feature)</span><br><span class="line">    </span><br><span class="line">    result = Predict(testset, prior_prob, con_prob, feature)</span><br><span class="line">    print(<span class="string">'The result:'</span>,result)</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;得到结果:</p>
-<blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; The result: [[ 0.02222222  0.06666667]</span><br><span class="line">&gt;  [ 1.         -1.        ]]</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="贝叶斯估计"><a href="#贝叶斯估计" class="headerlink" title="贝叶斯估计"></a>贝叶斯估计</h3><p>&emsp;&emsp;极大似然估计的一个可能是会出现所要估计的概率值为0的情况，这时会影响到后验概率的计算结果，解决这一问题的方法是采用贝叶斯估计，具体的只需要在极大似然估计的基础上加多一个参数即可。</p>
-<script type="math/tex; mode=display">P_{\lambda}(X^{(j)}=a_{jl},Y=c_k)=\frac{\sum \limits_{i=1}^NI(x_i^{(j)}=a_{jl},y_i=c_k)+\lambda} {\sum \limits_{i=1}^NI(y_i=c_k)+S_j\lambda},\lambda \geq 0</script><p>&emsp;&emsp;当<script type="math/tex">\lambda=0</script> 时就是最大似然估计。常取<script type="math/tex">\lambda=1</script> ，这时称为拉普拉斯平滑(Laplace smoothing)。</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>&emsp;&emsp;朴素贝叶斯法高效，且易于实现，但是其缺点就是分类的性能不一定很高。</p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ol>
-<li><a href="https://www.cnblogs.com/juefan/p/3807715.html" target="_blank" rel="noopener">统计学习方法（四）——朴素贝叶斯法</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/2013/12/naive_bayes_classifier.html" target="_blank" rel="noopener">朴素贝叶斯分类器的应用</a></li>
-<li><a href="https://www.cnblogs.com/bethansy/p/7435740.html" target="_blank" rel="noopener">李航统计学习方法——算法3朴素贝叶斯法</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/30333160" target="_blank" rel="noopener">李航《统计学习方法》朴素贝叶斯分类器实现</a></li>
+<h2 id="因特网"><a href="#因特网" class="headerlink" title="因特网"></a>因特网</h2><p>所有接入因特网的设备都称为<strong>主机 </strong>或<strong>端系统</strong>。</p>
+<p>主机通过<strong>通信链路</strong>和<strong>分组交换机</strong>连接，<strong>路由器</strong>和<strong>链路层交换机</strong>都是分组交换机。</p>
+<p>一个分组所经历的一系列通信链路和分组交换机称为通过该网络的<strong>路径</strong>。</p>
+<p><strong>ISP</strong>是因特网服务供应商，有不同层级，每个ISP是一个由多个分组交换机和多段通信链路组成的网络。</p>
+<p><strong>协议</strong>控制着因特网中信息的接收和发送。因特网的主要协议统称为<strong>TCP/IP</strong>。</p>
+<ul>
+<li>TCP 可靠 面向连接  确保传递与流量控制</li>
+<li>IP UDP 不可靠 非面向连接</li>
+</ul>
+<p><img src="http://img.blog.csdn.net/20180311155659592?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
+<p><strong>因特网的两种描述方法</strong>：一种是根据它的硬件和软件组成来描述，另一种是根据基础设施向分布式应用程序提供的服务来描述。</p>
+<p><strong>通信链路</strong>有不同的物理媒体组成，不同媒体具有不同速率，包括同轴电缆、铜线、光缆、无线电</p>
+<p><strong>分组</strong>： 当一台端系统有数据要向另一台端系统发送时，端系统将数据分段并在每段加上首部字节，由此形成的信息包称为<strong>分组</strong>。</p>
+<p>一个<strong>协议</strong>定义了在两个或多个通信实体之间交换的报文格式和次序，以及在报文或其他事件方面所采取的动作、传输和/或接收。</p>
+<p><strong>端系统 = 主机</strong>：和因特网相连的计算机等设备（如TV，Web服务器，手提电脑）。</p>
+<p>主机有时候有进一步分为两类：<strong>客户机（client）</strong>和<strong>服务器（server）</strong>。</p>
+<p>在网络软件的上下文中，客户机和服务器有另一种定义，<strong>客户机程序（client program）</strong>是运行在一个端系统上的程序，它发出请求，并从运行在另一个端系统上的<strong>服务器程序（server program）</strong>接收服务。</p>
+<p>客户机-服务器因特网应用程序是<strong>分布式应用程序（distributed application）</strong>。</p>
+<p>还有的应用程序是P2P对等应用程序，其中的端系统互相作用并运行执行客户机和服务器功能的程序。</p>
+<h2 id="网络边缘"><a href="#网络边缘" class="headerlink" title="网络边缘"></a>网络边缘</h2><p>互联网的边缘部分也叫<strong>资源子网</strong>。</p>
+<p><strong>接入网</strong>：将端系统连接到<strong>边缘路由器（edge router）</strong>的物理链路。</p>
+<p><strong>边缘路由器</strong>：端系统到任何其他远程端系统的路径上的第一台路由器。</p>
+<p><img src="http://img.blog.csdn.net/20180311155759387?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
+<h3 id="网络接入类型"><a href="#网络接入类型" class="headerlink" title="网络接入类型"></a>网络接入类型</h3><p>网络接入的三种类型：（分类并不严格）</p>
+<ol>
+<li><p>住宅接入（residential  access），将<strong>家庭端系统（PC或家庭网络）</strong>和网络相连。</p>
+<p>​    1. 通过普通模拟电话线用<strong>拨号调制解调器（dial-up modem）</strong>与住宅ISP相连。家用调制解调器将PC输出的数字信号转化为模拟形式，以便在模拟电话线上传输。模拟电话线由<strong>双绞铜线</strong>构成，就是用于打普通电话的电话线。允许56kbps接入（下载上传速度慢），用户上网就不能打电话了。</p>
+<p>​    2. <strong>数字用户线（digital subscriber line，DSL）</strong>:一种新型的调制解调器技术，类似于<strong>拨号调制解调器</strong>，也运行在现有的双绞线电话线上，通过限制用户和ISP调制解调器之间的距离，DSL能够以高得多的速率传输和接受数据。（使用频分多路复用技术），分为上行信道和下行信道，两个信道速率不一样。</p>
+<p>​    3. <strong>混合光纤同轴电缆（hybrid fiber-coaxial cable， HFC）</strong>：使用了光缆和同轴电缆相结合的技术。扩展了当前用于广播电缆电视的电缆网络，需要<strong>电缆调制解调器（cable modem），</strong>分为上行信道和下行信道，共享广播媒体（HFC特有），信道都是共享的，需要一个分布式多路访问协议，以协调传输和避免碰撞。</p>
+</li>
+<li><p>公司接入（company access），将<strong>商业或教育机构中的端系统</strong>和网络相连</p>
+<p>​    1. 局域网（LAN）</p>
+<p>​    2. 以太网</p>
+<p>​        1. 共享以太网</p>
+<p>​        2. 交换以太网</p>
+</li>
+<li><p>无线接入（wireless access），将<strong>移动端系统</strong>与网络相连。分为两类</p>
+<p>​    1. <strong>无线局域网（wireless LAN）：</strong>无线用户与位于几十米半径内的基站（无线接入点）之间传输/接收分组。这些基站和有线的因特网相连接，因而为无线用户提供连接到有线网络的服务。</p>
+<ol>
+<li><strong>广域无线接入网（wide-area wireless access network）</strong>：分组经用于蜂窝电话的相同无线基础设施进行发送，基站由电信提供商管理，为数万米半径内的用户提供无线接入服务。</li>
 </ol>
+</li>
+</ol>
+<p>基于IEEE 802.11技术的无线局域网也被称为无线以太网和WiFi。</p>
+<p>HFC使用了光缆和同轴电缆相结合的技术，拨号56kbps调制解调器和ASDL使用了双绞铜线；移动接入网络使用了无线电频谱。</p>
+<h3 id="物理媒体"><a href="#物理媒体" class="headerlink" title="物理媒体"></a>物理媒体</h3><p>物理媒体分为两类：</p>
+<p>​    1. 导引型媒体（guided media）：电波沿着<strong>固体媒体</strong>（光缆，双绞铜线或同轴电缆）被导引。</p>
+<ol>
+<li>非导引型媒体（unguided media）：电波在<strong>空气或外层空间</strong>（在无线局域网或数字卫星频道）中传播；</li>
+</ol>
+<p>导引型媒体（guided media）</p>
+<p>​    1. <strong>双绞铜线</strong>：最便宜，使用最普遍，两根线被绞合起来，以减少对邻近双绞线的电气干扰。一根电缆由许多双绞线捆扎在一起，并在外面覆盖上保护性防护层，一堆电线构成一个通信链路。<strong>非屏蔽双绞线UTP</strong>常用于建筑物内的计算机网络中，即用于局域网（LAN）中。双绞线最终已经成为高速LAN联网的主要方式。</p>
+<p>​   2. <strong>同轴电缆</strong>：能作为导引式共享媒体，具有高比特速率。</p>
+<ol>
+<li><strong>光缆</strong>：不受电磁干扰，长达100km的光缆信号衰减极低，并且很难接头。</li>
+</ol>
+<p>非导引型媒体（unguided media）：电波在<strong>空气或外层空间</strong>（在无线局域网或数字卫星频道）中传播；</p>
+<p>​    1. <strong>陆地无线电信道</strong>：具有穿透墙壁，提供与移动用户的连接以及长距离承载信号的能力。</p>
+<ol>
+<li><strong>卫星无线电信道</strong></li>
+</ol>
+<p>   一颗通信卫星连接两个或多个位于地球的微波发射方/接收方，它们被称为地面站。卫星无线电信道分为<strong>同步卫星</strong>和<strong>低地球轨道卫星</strong>。</p>
+<p>   同步卫星永久的停留在地球上方相同的点，卫星链路常用于电话网或因特网的主干。卫星链路在那些无法使用DSL或基于电缆的因特网接入区域，也越来越多地用作高速住宅因特网接入。</p>
+<p>   低地球轨道卫星 围绕地球旋转，彼此通信，未来低地球轨道卫星技术也许能用于因特网接入。</p>
+<h2 id="网络核心"><a href="#网络核心" class="headerlink" title="网络核心"></a>网络核心</h2><p>网络核心，即互联了<strong>因特网端系统的分组交换机</strong>和<strong>链路的网状网络</strong>，也叫<strong>通信子网</strong>。</p>
+<p><img src="http://img.blog.csdn.net/20180311155906494?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
+<p>通过网络链路和交换机移动数据有两种基本方法：<strong>电路交换（circuit switching）</strong>和<strong>分组交换（packet swiitching）</strong>。</p>
+<p><strong>电路交换网络</strong>中，沿着端系统通信路径，为端系统之间通信所提供的资源在通信会话期间会被预留。例子有电话网络。</p>
+<p><strong>分组交换网络</strong>中，这些资源不被预留。例子有因特网网络。</p>
+<ol>
+<li><p>电路交换：创建专用的端到端连接，独占带宽 有独立的建立、连接过程；</p>
+</li>
+<li><p>电路交换网络中的多路复用</p>
+<p>​    1. 频分多路复用（Frequency-Division Multiplexing，FDM）</p>
+<p>​    2. 时分多路复用（Time-Division Multiplexing，TDM）</p>
+</li>
+<li><p>分组交换：共享带宽</p>
+<p>​    存储转发传输机制：在交换机能够开始向输出链路传输该分组的第一个比特之前，必须接收到整个分组。</p>
+</li>
+<li><p>分组交换和电路交换对比：统计多路复用</p>
+</li>
+</ol>
+<h3 id="分组交换"><a href="#分组交换" class="headerlink" title="分组交换"></a>分组交换</h3><p>​    分组交换是以分组为单位进行传输和交换的，它是一种存储——转发交换方式，即将到达交换机的分组先送到存储器暂时存储和处理，等到相应的输出电路有空闲时再送出。</p>
+<p><img src="http://img.blog.csdn.net/20180311155922915?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
+<p>​    <strong>优点</strong>：</p>
+<p>​    （1）分组交换不需要为通信双反预先建立一条专用的通信线路，不存在连接建立时延，用户可随时发送分组。</p>
+<p>​    （2）由于采用存储转发方式，加之交换节点具有路径选择，当某条传输线路故障时可选择其他传输线路，提高了传输的可靠性。</p>
+<p>​    （3）通信双反不是固定的战友一条通信线路，而是在不同的时间一段一段地部分占有这条物理通路，因而大大提高了通信线路的利用率。</p>
+<p>​    （4）加速了数据在网络中的传输。因而分组是逐个传输，可以使后一个分组的存储操作与前一个分组的转发操作并行，这种流水线式传输方式减少了传输时间。</p>
+<p>​    （5）分组长度固定，相应的缓冲区的大小也固定，所以简化了交换节点中存储器的管理。</p>
+<p>​    （6）分组较短，出错几率减少，每次重发的数据量也减少，不仅提高了可靠性，也减少了时延。</p>
+<p><img src="http://img.blog.csdn.net/20180311160209121?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
+<p>​    <strong>缺点：</strong></p>
+<p>​    （1）由于数据进入交换节点后要经历存储转发这一过程，从而引起的转发时延（包括接受分组、检验正确性、排队、发送时间等），而且网络的通信量越大，造成的时延就越大，实时性较差。</p>
+<p>​    （2）分组交换只适用于数字信号。</p>
+<p>​    （3）分组交换可能出现失序，丢失或重复分组，分组到达目的节点时，对分组按编号进行排序等工作，增加了麻烦。</p>
+<p>​    <strong>综上</strong>，若传输的数据量很大，而且传送时间远大于呼叫时间，则采用电路交换较为合适；当端到端的通路有很多段链路组成是，采用分组交换较为合适。从提高整个网络的信道利用率上看，分组交换优于电路交换。</p>
+<h3 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h3><p>​    电路交换是以电路连接为目的的交换方式，通信之前要在通信双方之间建立一条被双方独占的物理通道。</p>
+<p>​    <strong>电路交换的三个阶段</strong>：</p>
+<p>​    （1）建立连接    （2）通信    （3）释放连接</p>
+<p>​    <strong>优点</strong>：</p>
+<p>​    （1）由于通信线路为通信双方用户专用，数据直达，所以传输数据的时延非常小。</p>
+<p>​    （2）通信双方之间的屋里通路一旦建立，双方可以随时通信，实时性强。</p>
+<p>​    （3）双方通信时按发送顺序传送数据，不存在失序问题。</p>
+<p>​    （4）电路交换既适用于传输模拟信号，也适用于传输数字信号。</p>
+<p>​    （5）电路交换的交换设备及控制均比较简单。</p>
+<p>​    <strong>缺点</strong>：</p>
+<p>​    （1）电路交换平均连接建立时间对计算机通信来说较长。</p>
+<p>​    （2）电路交换家里连接后，物理通路被通信双方独占，即使通信线路空闲，也不能供其他用户使用，因而信道利用率低。</p>
+<p>​    （3）电路交换时，数据直达，不同类型，不同规格，不同速率的终端很难相互进行通信，也难以在通信过程中进行差错控制。</p>
+<h2 id="时延、丢包和吞吐量"><a href="#时延、丢包和吞吐量" class="headerlink" title="时延、丢包和吞吐量"></a>时延、丢包和吞吐量</h2><p>时延分为<strong>节点处理时延（nodal processing delay），排队时延（queuing delay），传输时延（transmission delay）</strong>和<strong>传播时延（propagation delay）</strong>，这些加起来就是<strong>节点总时延（total nodal delay），即</strong></p>
+<p><strong>节点总时延 = 节点处理时延 + 排队时延 + 传输时延 + 传播时延</strong></p>
+<h3 id="时延类型"><a href="#时延类型" class="headerlink" title="时延类型"></a>时延类型</h3><ol>
+<li><p><strong>处理时延</strong></p>
+<ol>
+<li>检查分组首部和决定将分组导向哪一个队列；</li>
+<li>其他：检查比特级差错所需要的时间。</li>
+</ol>
+</li>
+<li><p><strong>排队时延</strong></p>
+<p>在队列中，当分组在链路上等待传输时所需的时间，取决于先期到达的，正在排队等待想链路传输分组的数量。</p>
+</li>
+<li><p><strong>传输时延</strong></p>
+<ol>
+<li>将所有分组的比特推向链路所需要的时间。</li>
+<li>用L比特表示分组的长度，用R bps表示从路由器A到路由器B的链路传输速率。（对于一条10Mbps的以太网链路，速率R = 10Mbps）,<strong>传输时延（</strong>又称为<strong>存储转发时延）</strong>是<strong>L/R</strong>。</li>
+</ol>
+</li>
+<li><p><strong>传播时延</strong></p>
+<p>​    1. 从该链路的起点到路由器B传播所需要的时间是<strong>传播时延</strong>。该比特以该链路的传播速率传播。</p>
+<p>​    2. 传播时延 = 两台路由器的距离d / 传播速率s。</p>
+<ol>
+<li>传播速率取决于该链路的物理媒体（即光纤，双绞铜线等），速率范围是<script type="math/tex">2\times10^8\sim3\times10^8 m/s</script></li>
+</ol>
+</li>
+</ol>
+<h3 id="端到端时延"><a href="#端到端时延" class="headerlink" title="端到端时延"></a>端到端时延</h3><p>假定在源主机和目的主机之间有<script type="math/tex">N-1</script>台路由器，并且该网络是无拥塞的（因此排队时延是微不足道的），处理时延为<script type="math/tex">d_{proc}</script> ，每台路由器和源主机的输出速率是 R bps，每条链路的传播时延是<script type="math/tex">d_{proc}</script> ，节点时延累加起来得到端到端时延</p>
+<script type="math/tex; mode=display">d_{end-end} = N（d_{proc} + d_{trans} + d_{prop}）</script><script type="math/tex; mode=display">d_{trans} = L /R</script><ol>
+<li><p><strong>Traceroute程序</strong></p>
+<p>能够在任何因特网主机上运行。当用户指定一个目的主机名字时，元主机中的改程序朝着该目的地发送多个特殊分组之一时，它向源回送一个短报文，该报文包括该路由器的名字和地址。RFC1393描述了Traceroute。</p>
+</li>
+<li><p><strong>端系统、应用程序和其他时延</strong></p>
+</li>
+</ol>
+<p>​    除了处理时延，传输时延，传播时延外，端系统中还有一些其他重要的时延：</p>
+<p>​    1. 拨号调制解调器引入的<strong>调制/编码时延</strong>，量级在几十毫秒，对于以太网，电缆调制解调器和DSL等接入技术，这种时延是不太多的；</p>
+<p>​    2. 向共享媒体传输分组的端系统可以将有意地延迟传输作为其协议的一部分，以便与其他端系统共享媒体。（第五章探讨）</p>
+<p>​    3. <strong>媒体分组化时延</strong>，在IP话音（VoIP）应用中。在VoIP中，发送方在向因特网传递分组之前必须首先用编码的数字化语音填充分组，这种填充分组的时间就是<strong>分组化时延</strong>。（可能比较大）</p>
+<h3 id="计算机网络中的吞吐量"><a href="#计算机网络中的吞吐量" class="headerlink" title="计算机网络中的吞吐量"></a>计算机网络中的吞吐量</h3><p>​    除了时延和丢包外，计网中另个一个必不可少的性能测度就是<strong>端到端吞吐量</strong>。</p>
+<p>​    吞吐量分为<strong>瞬时吞吐量（instancous throughput）</strong>和<strong>平均吞吐量（average throughput）</strong>，我们可以把他们类比为以前物理学过的瞬时速度和平均速度。</p>
+<p>​    瞬时吞吐量是主机B接受到该文件的一个速率，平均吞吐量是所有比特F/T秒，即F/T bps。</p>
+<p>​    对于某些应用程序（譬如因特网电话），希望他们具有低时延，并保持高于某一阈值的一致的瞬时吞吐量，对于其他应用程序（譬如文件传输等等），时延不是很重要，但是希望能具有尽可能高的吞吐量。</p>
+<p>​    吞吐量：单位时间内通过某个网络（或信道、接口）的数据量。</p>
+<h2 id="协议层次"><a href="#协议层次" class="headerlink" title="协议层次"></a>协议层次</h2><p>因特网协议栈：</p>
+<p>应用层、运输层、网络层、数据链路层、物理层。</p>
+<p>OIS的七层协议：</p>
+<p>应用层、表示层、会话层、运输层、网络层、数据链路层、物理层。</p>
+<p>TCP/IP四层协议：</p>
+<p>应用层、运输层、网际层、网络接口层</p>
+<p><img src="http://img.blog.csdn.net/20180311160251696?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzA2MTE2MDE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
+<p><strong>物理层</strong>：最基础的一层，建立在传输媒介基础上，起到<strong>建立、维护和取消物理连接的作用</strong>，实现设备之间的物理接口。物理层只接收和发送一串比特流，不考虑信息的意义和信息结构。包括对连接到网络上的设备描述其各种机械的、电气的、功能的规定。<strong>典型设备有：光纤、同轴电缆、双绞线、中继器和集线器</strong>。</p>
+<p><strong>数据链路层</strong>：在物理层提供比特流服务的基础上，将比特信息封装成数据帧Frame，起到在物理层上建立、撤销、标识逻辑链接和链路复用以及差错校验等功能。通过使用接收系统的硬件地址或物理地址来寻址。建立相邻结点之间的数据链接，通过差错控制提供数据帧（Frame）在信道上无差错的传输，同时为其上面的网络层提供有效的服务。数据链路层在不可靠的物理介质上提供可靠的传输。该层的作用包括：<strong>物理地址寻址、数据的成帧、流量控制、数据检错、重发等</strong>。<strong>典型设备有：二层交换机、网桥、网卡</strong>。<strong>差错控制</strong>：在数据传输过程中如何发现并更在错误；流量控制：通信双方速度存在差异，需要协调匹配通信正常。</p>
+<p><strong>网络层</strong>：或通信子网层，是高层协议之间的界面层，用于控制通信子网的操作，是通信子网与资源子网的接口。在网络间进行通信的计算机之间可能会通过多个数据链路，也可能还要经过很多通信子网。网络层的任务就是选择合适的网间路由和交换结点，确保数据及时传送。网络层将解封装数据链路层收到的帧，提取数据包，包中封装有网络层包头，其中含有逻辑地址信息，包括源站点和目的站点地址的网络地址。<strong>典型设备是路由器</strong>。<br>网络层主要功能为<strong>管理数据通信</strong>，<strong>实现端到端的数据传送服务</strong>；<strong>主体协议是IP协议</strong></p>
+<p><strong>运输层</strong>：建立在网络层和会话层之间，实质上它是网络体系结构中低层与高层之间衔接的一个接口层。用一个寻址机制来标识一个特殊的应用程序（端口号）。传输层不仅是一个独立的结构层，它还是整个分层体系结构的核心。传输层的数据单元是由数据组织成的数据段（Segment）这个层负责获取全部信息，因此它必须跟踪数据单元碎片、乱序到达的数据包和其他在传输过程中可能发生的危险。<br>主要功能为负责总体的<strong>数据传输</strong>和<strong>数据控制</strong>，<strong>主要包括两个协议：TCP：传输控制协议；UDP：用户报文协议</strong></p>
+<p><strong>会话层</strong>：也称会晤层或对话层，在会话层及以上的高层次中，数据传达的单位不再另外命名，统称为报文。会话层不参与具体传送，它提供包括访问校验和会话管理在内的建立和维护应用之间通信的机制。会话层提供的服务可使应用建立和维持会话，并使会话同步，会话层使用校验点可以使通信会话在通信失效时从校验点继续恢复通信，这对传送大型文件极为重要。<br>主要功能是<strong>为通信进程建立连接</strong>。</p>
+<p><strong>表示层</strong>：对上服务应用层，对下接收会话层的服务，是为应用过程之中传送的信息提供表示方法的服务，它关心的只是发出的信息的语义和语法。表示层要完成某些特定的功能，主要有不同的数据编码格式的转换，提供数据压缩、解压缩服务，对数据进行加密、解密。如图像格式的显示就是由位于表示层的协议来支持的。表示层提供的服务包括：<strong>语法选择、语法转换</strong>等，语法选择是提供一种初始语法和以后修改这种选择的手段。语法转换涉及代码转换和字符集的转换、数据格式的修改以及对数据结构操作的适配。主要功能是进行<strong>加密和压缩</strong>。</p>
+<p><strong>应用层</strong>：是通信用户之间的窗口，为用户提供网络管理、文件传输、事务处理等服务。其中包含了若干独立的用户通用的服务协议模块。网络应用层是OSI的最高层，<strong>为网络用户之间的通信提供专用的程序</strong>。主要功能是<strong>为通信进程建立连接</strong>。</p>
+<h2 id="攻击威胁下的网络"><a href="#攻击威胁下的网络" class="headerlink" title="攻击威胁下的网络"></a>攻击威胁下的网络</h2><ol>
+<li>坏家伙能够经因特网将恶意软件放入你的计算机</li>
+<li>坏家伙能够攻击服务器和网络基础设施</li>
+<li>能够嗅探分组</li>
+<li>能够伪装成信任的人：IP哄骗（IP spoofing）可用端点鉴别（end-point authentication）机制</li>
+<li>修改或删除报文：中间人攻击</li>
+</ol>
+<p>恶意软件（malware）：删除文件、收集隐私信息</p>
+<p>僵尸网络（botnet）：对目标主机展开垃圾邮件分发或分布式拒绝服务攻击。</p>
+<p>病毒（virus）：恶意可执行代码并自我复制</p>
+<p>蠕虫（worm）：不需明显交互即可感染</p>
+<p>特洛伊木马（Trojan horse）：为进行非法目的的计算机病毒</p>
+<h2 id="计算机网络发展史"><a href="#计算机网络发展史" class="headerlink" title="计算机网络发展史"></a>计算机网络发展史</h2><ol>
+<li><p>分组交换 1961-1972</p>
+<p>第一个分组交换网ARPANET</p>
+</li>
+<li><p>专用网络和网络互联 1972-1980</p>
+<p>开始产生TCP、UDP等协议</p>
+</li>
+<li><p>网络的激增 1980-1990</p>
+<p>建立CSFNET</p>
+</li>
+<li><p>因特网爆炸 20世纪90年代<br>万维网应用出现</p>
+</li>
+</ol>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://www.jianshu.com/p/21f3af4653bb" target="_blank" rel="noopener">计算机网络－笔记</a></p>
+<p><a href="http://blog.csdn.net/liuqiyao_01/article/details/39001067" target="_blank" rel="noopener">电路交换与分组交换的区别</a></p>
+<p><a href="http://www.cnblogs.com/ArtemisZ/p/7555079.html" target="_blank" rel="noopener">《计算机网络自顶向下方法》读书笔记</a></p>
 
       
     </div>
@@ -599,12 +763,12 @@ $(function() {
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/02/21/naive_Bayes/">机器学习入门之《统计学习方法》笔记——朴素贝叶斯法</a></p>
+  <p><span>本文标题:</span><a href="/2018/03/11/Internet/">计算机网络笔记整理——绪论</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Quanfita 的个人博客">Quanfita</a></p>
-  <p><span>发布时间:</span>2018年02月21日 - 19:02</p>
-  <p><span>最后更新:</span>2018年02月23日 - 12:02</p>
-  <p><span>原始链接:</span><a href="/2018/02/21/naive_Bayes/" title="机器学习入门之《统计学习方法》笔记——朴素贝叶斯法">http://quanfita.cn/2018/02/21/naive_Bayes/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/02/21/naive_Bayes/"  aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2018年03月11日 - 16:03</p>
+  <p><span>最后更新:</span>2018年03月11日 - 16:03</p>
+  <p><span>原始链接:</span><a href="/2018/03/11/Internet/" title="计算机网络笔记整理——绪论">http://quanfita.cn/2018/03/11/Internet/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://quanfita.cn/2018/03/11/Internet/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -664,9 +828,7 @@ $(function() {
       
         <div class="post-tags">
           
-            <a href="/tags/Machine-Learning/" rel="tag"><i class="fa fa-tag"></i> Machine Learning</a>
-          
-            <a href="/tags/Naive-Bayes/" rel="tag"><i class="fa fa-tag"></i> Naive Bayes</a>
+            <a href="/tags/计算机网络/" rel="tag"><i class="fa fa-tag"></i> 计算机网络</a>
           
         </div>
       
@@ -679,8 +841,8 @@ $(function() {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/12/k_NN/" rel="next" title="机器学习入门之《统计学习方法》笔记整理——K近邻法">
-                <i class="fa fa-chevron-left"></i> 机器学习入门之《统计学习方法》笔记整理——K近邻法
+              <a href="/2018/03/06/2017_2018_winter_holiday/" rel="next" title="2017~2018年寒假总结">
+                <i class="fa fa-chevron-left"></i> 2017~2018年寒假总结
               </a>
             
           </div>
@@ -689,8 +851,8 @@ $(function() {
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/21/NewBlog/" rel="prev" title="终于完成博客的搭建工作了，欢迎大家访问">
-                终于完成博客的搭建工作了，欢迎大家访问 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/11/list/" rel="prev" title="数据结构详解——线性表（C++实现）">
+                数据结构详解——线性表（C++实现） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -900,7 +1062,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#朴素贝叶斯法"><span class="nav-number">1.</span> <span class="nav-text">朴素贝叶斯法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数估计"><span class="nav-number">2.</span> <span class="nav-text">参数估计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#极大似然估计"><span class="nav-number">2.1.</span> <span class="nav-text">极大似然估计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#学习与分类算法"><span class="nav-number">2.2.</span> <span class="nav-text">学习与分类算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算法-朴素贝叶斯算法"><span class="nav-number">2.2.1.</span> <span class="nav-text">算法  (朴素贝叶斯算法)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贝叶斯估计"><span class="nav-number">2.3.</span> <span class="nav-text">贝叶斯估计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文章"><span class="nav-number">4.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#因特网"><span class="nav-number">1.</span> <span class="nav-text">因特网</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络边缘"><span class="nav-number">2.</span> <span class="nav-text">网络边缘</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络接入类型"><span class="nav-number">2.1.</span> <span class="nav-text">网络接入类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#物理媒体"><span class="nav-number">2.2.</span> <span class="nav-text">物理媒体</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络核心"><span class="nav-number">3.</span> <span class="nav-text">网络核心</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分组交换"><span class="nav-number">3.1.</span> <span class="nav-text">分组交换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电路交换"><span class="nav-number">3.2.</span> <span class="nav-text">电路交换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时延、丢包和吞吐量"><span class="nav-number">4.</span> <span class="nav-text">时延、丢包和吞吐量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#时延类型"><span class="nav-number">4.1.</span> <span class="nav-text">时延类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#端到端时延"><span class="nav-number">4.2.</span> <span class="nav-text">端到端时延</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算机网络中的吞吐量"><span class="nav-number">4.3.</span> <span class="nav-text">计算机网络中的吞吐量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#协议层次"><span class="nav-number">5.</span> <span class="nav-text">协议层次</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#攻击威胁下的网络"><span class="nav-number">6.</span> <span class="nav-text">攻击威胁下的网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机网络发展史"><span class="nav-number">7.</span> <span class="nav-text">计算机网络发展史</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文章"><span class="nav-number">8.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
             
 
           </div>

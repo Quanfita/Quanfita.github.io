@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://quanfita.cn/2018/03/11/list/</loc>
+    <lastmod>2018-03-11T08:13:51.377Z</lastmod>
+    <data>
+        <display>
+        <title>数据结构详解——线性表（C++实现）</title>
+        <pubTime>2018-03-11T08:09:44.272Z</pubTime>
+        
+        <tag>Linear List</tag>
+         
+         
+           
+             
+              <breadCrumb title="Data Structures" url="http://quanfita.cn/categories/Data-Structures/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/03/11/Internet/</loc>
+    <lastmod>2018-03-11T08:08:34.874Z</lastmod>
+    <data>
+        <display>
+        <title>计算机网络笔记整理——绪论</title>
+        <pubTime>2018-03-11T08:06:09.495Z</pubTime>
+        
+        <tag>计算机网络</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://quanfita.cn/2018/03/06/2017_2018_winter_holiday/</loc>
     <lastmod>2018-03-06T12:03:54.115Z</lastmod>
     <data>
@@ -257,9 +297,9 @@
         <title>李开复《人工智能》读后感</title>
         <pubTime>2018-02-06T15:06:56.770Z</pubTime>
         
-        <tag>人工智能</tag>
-         
         <tag>推荐</tag>
+         
+        <tag>人工智能</tag>
          
          
            
