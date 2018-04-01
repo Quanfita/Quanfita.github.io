@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title><![CDATA[Unreal Circle（北京站）（多图）]]></title>
     <url>%2F2018%2F04%2F01%2FUnreal_Circle%2F</url>
     <content type="text"><![CDATA[有幸参加了Unreal Circle北京站的活动，晒一下活动时的照片]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>Unreal Circle</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[蓝桥杯日常刷题——历届试题1434：回文数字]]></title>
