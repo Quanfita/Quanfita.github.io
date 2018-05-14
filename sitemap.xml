@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://quanfita.cn/2018/05/14/boosting/</loc>
+    
+    <lastmod>2018-05-14T12:33:20.816Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/SVM/</loc>
+    
+    <lastmod>2018-05-14T12:31:55.460Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/SVM_boston/</loc>
+    
+    <lastmod>2018-05-14T12:26:13.689Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/SVM_digits/</loc>
+    
+    <lastmod>2018-05-14T12:25:39.880Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/naive_bayes_news/</loc>
+    
+    <lastmod>2018-05-14T12:24:50.731Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/logistic_breast_cancer/</loc>
+    
+    <lastmod>2018-05-14T12:23:17.767Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/decision_tree_titanic/</loc>
+    
+    <lastmod>2018-05-14T12:22:05.083Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/KNN_Iris/</loc>
+    
+    <lastmod>2018-05-14T12:20:26.527Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/preceptron_Iris/</loc>
+    
+    <lastmod>2018-05-14T12:18:43.295Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://quanfita.cn/2018/04/01/Unreal_Circle/</loc>
     
     <lastmod>2018-04-01T10:35:58.662Z</lastmod>

@@ -4,6 +4,218 @@
 
     
   <url>
+    <loc>http://quanfita.cn/2018/05/14/boosting/</loc>
+    <lastmod>2018-05-14T12:33:20.816Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门之《统计学习方法》笔记整理——提升方法</title>
+        <pubTime>2018-05-14T12:27:29.909Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>Boosting</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/SVM/</loc>
+    <lastmod>2018-05-14T12:31:55.460Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门之《统计学习方法》笔记整理——支持向量机</title>
+        <pubTime>2018-05-14T12:27:13.877Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>SVM</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/SVM_boston/</loc>
+    <lastmod>2018-05-14T12:26:13.689Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门实战——支持向量机实战Boston房价数据集</title>
+        <pubTime>2018-05-14T12:07:02.097Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>SVM</tag>
+         
+        <tag>Boston</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/SVM_digits/</loc>
+    <lastmod>2018-05-14T12:25:39.880Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门实战——线性支持向量机实战digits数据集</title>
+        <pubTime>2018-05-14T12:07:46.898Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>SVM</tag>
+         
+        <tag>digits</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/naive_bayes_news/</loc>
+    <lastmod>2018-05-14T12:24:50.731Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门实战——朴素贝叶斯实战新闻组数据集</title>
+        <pubTime>2018-05-14T12:09:03.616Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>naive bayes</tag>
+         
+        <tag>20newsgroups</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/logistic_breast_cancer/</loc>
+    <lastmod>2018-05-14T12:23:17.767Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门实战——逻辑斯谛回归实战breast cancer数据集</title>
+        <pubTime>2018-05-14T12:08:18.050Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>logistic</tag>
+         
+        <tag>breast cancer</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/decision_tree_titanic/</loc>
+    <lastmod>2018-05-14T12:22:05.083Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门实战——决策树算法实战Titanic数据集</title>
+        <pubTime>2018-05-14T12:08:37.023Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>Titanic</tag>
+         
+        <tag>decision tree</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/KNN_Iris/</loc>
+    <lastmod>2018-05-14T12:20:26.527Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门实战——KNN实战Iris数据集</title>
+        <pubTime>2018-05-14T12:09:21.473Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>KNN</tag>
+         
+        <tag>Iris</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://quanfita.cn/2018/05/14/preceptron_Iris/</loc>
+    <lastmod>2018-05-14T12:18:43.295Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习入门实战——感知机算法实战Iris数据集</title>
+        <pubTime>2018-05-14T12:09:38.067Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>Iris</tag>
+         
+        <tag>perceptron</tag>
+         
+         
+           
+             
+              <breadCrumb title="note" url="http://quanfita.cn/categories/note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://quanfita.cn/2018/04/01/Unreal_Circle/</loc>
     <lastmod>2018-04-01T10:35:58.662Z</lastmod>
     <data>
@@ -444,9 +656,9 @@
         
         <tag>TensorFlow</tag>
          
-        <tag>Kaggle</tag>
-         
         <tag>Titanic</tag>
+         
+        <tag>Kaggle</tag>
          
          
            
