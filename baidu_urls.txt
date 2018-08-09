@@ -1,3 +1,4 @@
+http://quanfita.cn/2018/08/09/TensorFlow_poem/
 http://quanfita.cn/2018/05/14/boosting/
 http://quanfita.cn/2018/05/14/SVM/
 http://quanfita.cn/2018/05/14/preceptron_Iris/
