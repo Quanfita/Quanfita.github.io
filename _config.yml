@@ -85,9 +85,9 @@ author:
   bio              : "An Indepandent Researcher of Computer Graphics and Image Process"
   location         : "China"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com.hk/citations?user=U73d6LAAAAAJ&hl=zh-CN"
-  email            :
+  email            : "qumengnan@quanfita.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -102,11 +102,11 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "quanfita"
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : "https://stackoverflow.com/users/9204084/quanfita"
   steam            :
   tumblr           :
   twitter          : #"replacethistwitterhandle"
