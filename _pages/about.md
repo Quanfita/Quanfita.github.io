@@ -16,4 +16,4 @@ My research is Computer Graphics. During my undergraduate studies, I published t
 
 Published
 ======
-1. [Colorization for Anime Sketches with Cycle-Consistent Adversarial Network](http://www.ijpe-online.com/EN/10.23940/ijpe.19.03.p20.910918)
+* [Colorization for Anime Sketches with Cycle-Consistent Adversarial Network](http://www.ijpe-online.com/EN/10.23940/ijpe.19.03.p20.910918)
