@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Quanfita(Mengnan Qu)'s Research Page"
+title                    : "Mengnan Qu's Research Page"
 title_separator          : "-"
 name                     : &name "Mengnan Qu"
 description              : &description "personal research, computer vision, computer graphics, rendering, image process, CNN, GAN"
@@ -80,8 +80,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Quanfita(Mengnan Qu)"
-  avatar           : "profile.png"
+  name             : "Mengnan Qu(屈梦楠)"
+  avatar           : "avater.jpg"
   bio              : "An Indepandent Researcher of Computer Graphics and Image Process"
   location         : "China"
   employer         :
