@@ -26,7 +26,6 @@ Skills
   * Computer Graphics: Ray Tracing
   * DeepLearning: GAN, CNN
   * Other: A* Algrothm
-* Skill 3
 
 Publications
 ======
