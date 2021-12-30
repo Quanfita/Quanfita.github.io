@@ -12,4 +12,4 @@ Coloring animation sketches has always been a complex and interesting task, but 
 
 [Download paper here](https://research.quanfita.cn/files/Colorization_for_Anime_Sketches_with_Cycle-Consistent_Adversarial_Network.pdf)
 
-Recommended citation: Guanghua Zhang, Mengnan Qu, Yuhao Jin, Qingpeng Song. "Colorization for Anime Sketches with Cycle Consistent Adversarial Network." <i>International Journal of Performability Engineering</i> 15.3(2019):910-918.
+**Recommended citation**: Guanghua Zhang, Mengnan Qu, Yuhao Jin, Qingpeng Song. "Colorization for Anime Sketches with Cycle Consistent Adversarial Network." <i>International Journal of Performability Engineering</i> 15.3(2019):910-918.
