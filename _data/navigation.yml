@@ -12,11 +12,11 @@ main:
   # - title: "Portfolio"
   #   url: /portfolio/
         
-  - title: "Blog Posts"
-    url: https://quanfita.cn
+#   - title: "Blog Posts"
+#     url: https://quanfita.cn
     
-  - title: "CV"
-    url: /cv/
+  - title: "Projects"
+    url: /projects/
     
   # - title: "Guide"
   #   url: /markdown/
