@@ -7,8 +7,11 @@ redirect_from:
   - /resume
 ---
 
+{% if author.github %} You can also find my projects on my Github profile. {% endif %}
+
 {% include base_path %}
 
+{% for post in site.projects reversed %} {% include archive-single.html %} {% endfor %}
 
   
 <!-- Talks
