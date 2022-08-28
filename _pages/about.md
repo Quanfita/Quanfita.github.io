@@ -23,3 +23,9 @@ Publications
 * Guanghua Zhang, Mengnan Qu, Yuhao Jin, and Qingpeng Song. Colorization for Anime Sketches with Cycle-Consistent Adversarial Network [J]. International Journal Performability Engineering, 2019, 15(3): 910-918.
 * 张光华, 屈梦楠, 靳宇浩,等. 一种基于U型周期一致对抗网络的动漫图像的双向色彩化方法, CN109584325A[P]. 2019.
 * 屈梦楠, 靳宇浩, 张光华,等. 一种基于色卡映射与直方图映射的影视风格仿真方法, CN110264564A[P]. 2019.
+
+Project
+======
+* Gaoyongxian666, Quanfita et. al. AIDCS: https://github.com/Gaoyongxian666/AI_DCS. 2019.
+* Quanfita. SmartSeed: https://github.com/Quanfita/SmartSeed. 2020.
+* Quanfita. QWebStack: https://github.com/Quanfita/QWebStack. 2021.

@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "Mengnan Qu's Research Page"
+title                    : "Quanfita's Research Page"
 title_separator          : "-"
 name                     : &name "Mengnan Qu"
 description              : &description "personal research, computer vision, computer graphics, rendering, image process, CNN, GAN"
