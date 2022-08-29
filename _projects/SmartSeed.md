@@ -1,8 +1,8 @@
 ---
-title: QWebStack
+title: SmartSeed
 collection: projects
 excerpt: 'This is an open source image editing software modeled after Adobe Photoshop. I hope that I can use as many AI algorithms as possible to make it feature rich. Currently, this project is still in production, so stay tuned.'
-date: 2021-11-18
+date: 2019-2-28
 venue: 'Github'
 projecturl: 'https://github.com/Quanfita/QWebStack'
 ---
