@@ -26,6 +26,6 @@ Publications
 
 Projects
 ======
-* Gaoyongxian666, Quanfita et. al. AIDCS: https://github.com/Gaoyongxian666/AI_DCS. 2019.
+* [Gaoyongxian666](https://github.com/Gaoyongxian666), [LvYueYinger](https://github.com/LvYueYinger), Quanfita et. al. AIDCS: https://github.com/Gaoyongxian666/AI_DCS. 2019.
 * Quanfita. SmartSeed: https://github.com/Quanfita/SmartSeed. 2019.
 * Quanfita. QWebStack: https://github.com/Quanfita/QWebStack. 2021.
