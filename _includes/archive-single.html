@@ -61,7 +61,7 @@
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
-    {% if post.projecturl %}<p>{{ post.projecturl }}</p>{% endif %}
+    {% if post.projecturl %}<p><a href="{{ post.projecturl }}">{{ post.projecturl }}</a></p>{% endif %}
 
   </article>
 </div>
