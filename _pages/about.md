@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Mengnan Qu's Research Page"
+title: "Mengnan Qu"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -16,7 +16,7 @@ My research is Computer Graphics and Mechine Learning. During my undergraduate s
 
 Other Work
 ======
-As a Python development engineer, of course, my daily life is constantly typing code, so I have done many projects, but most of them are for commercial use. The projects I contact are basically back-end, responsible for the development of service interfaces. When I was in the company, I also tried to use Python for back-end development of games. I often like to research things in my daily life, so I have written a lot of scripts and done a lot of projects. Last year, I developed on the basis of [Hopetree](https://github.com/Hopetree)'s open source project [TendCode](https://tendcode.com) and built my personal blog [QTechCode](https://quanfita.cn)(but in Chinese).
+As a Python development engineer, of course, my daily life is constantly typing code, so I have done many projects, but most of them are for commercial use. The projects I contact are basically back-end, responsible for the development of service interfaces. When I was in the company, I also tried to use Python for back-end development of games. I often like to research things in my daily life, so I have written a lot of scripts and done a lot of projects.
 
 Publications
 ======
